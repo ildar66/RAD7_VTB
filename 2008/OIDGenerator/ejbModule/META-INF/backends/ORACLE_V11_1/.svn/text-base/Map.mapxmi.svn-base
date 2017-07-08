@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Mapping="Mapping.xmi" xmlns:OracleModel="http:///com/ibm/db/models/oracle/oracle.ecore" xmlns:SQLTables="http:///org/eclipse/wst/rdb/models/sql/tables.ecore" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmi:id="EjbRdbDocumentRoot_1228125829140" topToBottom="true" commandStack="">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1228125829140" primitivesDocument="ORACLE_V11"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1228125848984">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1228125848984">
+      <table xmi:type="OracleModel:OracleTable" href="META-INF/backends/ORACLE_V11_1/VTBLOANS.dbm#_WU11Y7-PEd2xqOQCgNK_cw"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1228125848984" optimistic="true">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1226923211355"/>
+      <outputs xmi:type="SQLTables:Column" href="META-INF/backends/ORACLE_V11_1/VTBLOANS.dbm#_WU11Zr-PEd2xqOQCgNK_cw"/>
+      <typeMapping href="JavatoORACLE_V11TypeMaps.V7.xmi#int-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1228125848985">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1226923211480"/>
+      <outputs xmi:type="SQLTables:Column" href="META-INF/backends/ORACLE_V11_1/VTBLOANS.dbm#_WU11ZL-PEd2xqOQCgNK_cw"/>
+      <typeMapping href="JavatoORACLE_V11TypeMaps.V7.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#OIDvalue"/>
+    <outputs xmi:type="OracleModel:OracleTable" href="META-INF/backends/ORACLE_V11_1/VTBLOANS.dbm#_WU11Y7-PEd2xqOQCgNK_cw"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <outputs xmi:type="OracleModel:OracleDatabase" href="META-INF/backends/ORACLE_V11_1/VTBLOANS.dbm#_WUGOgL-PEd2xqOQCgNK_cw"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoORACLE_V11TypeMaps.V7.xmi#Java_to_ORACLE_V11_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:OracleModel="http:///com/ibm/db/models/oracle/oracle.ecore" xmlns:SQLConstraints="http:///org/eclipse/wst/rdb/models/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/wst/rdb/models/sql/datatypes.ecore" xmlns:SQLExpressions="http:///org/eclipse/wst/rdb/models/sql/expressions.ecore" xmlns:SQLSchema="http:///org/eclipse/wst/rdb/models/sql/schema.ecore">
+  <OracleModel:OracleDatabase xmi:id="_OhxDsLSkEd2dr8ftBucKDA" name="Database" vendor="Oracle" version="9" schemas="_OiW5kLSkEd2dr8ftBucKDA"/>
+  <SQLSchema:Schema xmi:id="_OiW5kLSkEd2dr8ftBucKDA" name="NULLID" indices="_Ojs9YLSkEd2dr8ftBucKDA" tables="_Ojs9Y7SkEd2dr8ftBucKDA" database="_OhxDsLSkEd2dr8ftBucKDA"/>
+  <OracleModel:OracleIndex xmi:id="_Ojs9YLSkEd2dr8ftBucKDA" name="PK_SEQUENCES" Schema="_OiW5kLSkEd2dr8ftBucKDA" fillFactor="10" unique="true" table="_Ojs9Y7SkEd2dr8ftBucKDA" PCTFree="10" initTrans="2" maxTrans="255">
+    <members xmi:id="_Ojs9YbSkEd2dr8ftBucKDA" column="_Ojs9ZLSkEd2dr8ftBucKDA"/>
+    <properties xmi:id="_Ojs9YrSkEd2dr8ftBucKDA" initialExtent="12288" nextExtent="12288" minimumExtents="1" maximumExtents="249" PCTIncrease="50" freelists="1" freelistGroups="1" bufferpool="DEFAULT"/>
+  </OracleModel:OracleIndex>
+  <OracleModel:OracleTable xmi:id="_Ojs9Y7SkEd2dr8ftBucKDA" name="SEQUENCES" schema="_OiW5kLSkEd2dr8ftBucKDA" index="_Ojs9YLSkEd2dr8ftBucKDA" PCTFree="10" PCTUsed="40" initTrans="1" maxTrans="255">
+    <columns xmi:id="_Ojs9ZLSkEd2dr8ftBucKDA" name="ID" nullable="false">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Ojs9ZbSkEd2dr8ftBucKDA" name="VARCHAR2" primitiveType="CHARACTER_VARYING" length="50"/>
+    </columns>
+    <columns xmi:id="_Ojs9ZrSkEd2dr8ftBucKDA" name="VALUE" nullable="false">
+      <containedType xsi:type="SQLDataTypes:FixedPrecisionDataType" xmi:id="_Ojs9Z7SkEd2dr8ftBucKDA" name="NUMBER" primitiveType="NUMERIC"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:CheckConstraint" xmi:id="_Ojs9aLSkEd2dr8ftBucKDA" name="SYS_C003143">
+      <searchCondition xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_Ojs9abSkEd2dr8ftBucKDA" SQL="&quot;ID&quot; IS NOT NULL"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:CheckConstraint" xmi:id="_Ojs9arSkEd2dr8ftBucKDA" name="SYS_C003144">
+      <searchCondition xsi:type="SQLExpressions:SearchConditionDefault" xmi:id="_Ojs9a7SkEd2dr8ftBucKDA" SQL="&quot;VALUE&quot; IS NOT NULL"/>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_Ojs9bLSkEd2dr8ftBucKDA" name="PK_SEQUENCES" members="_Ojs9ZLSkEd2dr8ftBucKDA"/>
+    <properties xmi:id="_Ojs9bbSkEd2dr8ftBucKDA" initialExtent="65536" minimumExtents="1" maximumExtents="2147483645" freelists="1" freelistGroups="1" bufferpool="DEFAULT"/>
+  </OracleModel:OracleTable>
+</xmi:XMI>

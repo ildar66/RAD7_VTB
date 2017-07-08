@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/flexWorkflow/!svn/ver/3509/MD/VTB-AppLogic/trunk/source/com/vtb/domain
+END
+SpoOpportunityProduct.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/flexWorkflow/!svn/ver/3355/MD/VTB-AppLogic/trunk/source/com/vtb/domain/SpoOpportunityProduct.java
+END
+Govern.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/flexWorkflow/!svn/ver/2893/MD/VTB-AppLogic/trunk/source/com/vtb/domain/Govern.java
+END
+Organization.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/flexWorkflow/!svn/ver/3398/MD/VTB-AppLogic/trunk/source/com/vtb/domain/Organization.java
+END
+SpoAddress.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/flexWorkflow/!svn/ver/3355/MD/VTB-AppLogic/trunk/source/com/vtb/domain/SpoAddress.java
+END
+Okved.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/flexWorkflow/!svn/ver/3169/MD/VTB-AppLogic/trunk/source/com/vtb/domain/Okved.java
+END
+Manager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/flexWorkflow/!svn/ver/3099/MD/VTB-AppLogic/trunk/source/com/vtb/domain/Manager.java
+END
+SpoAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/flexWorkflow/!svn/ver/3433/MD/VTB-AppLogic/trunk/source/com/vtb/domain/SpoAccount.java
+END
+ProcessType.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/flexWorkflow/!svn/ver/2797/MD/VTB-AppLogic/trunk/source/com/vtb/domain/ProcessType.java
+END
+Industry.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/flexWorkflow/!svn/ver/2479/MD/VTB-AppLogic/trunk/source/com/vtb/domain/Industry.java
+END
+OrganizationGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/flexWorkflow/!svn/ver/3509/MD/VTB-AppLogic/trunk/source/com/vtb/domain/OrganizationGroup.java
+END
+SpoHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/flexWorkflow/!svn/ver/2983/MD/VTB-AppLogic/trunk/source/com/vtb/domain/SpoHistory.java
+END
+StopFactor.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/flexWorkflow/!svn/ver/2942/MD/VTB-AppLogic/trunk/source/com/vtb/domain/StopFactor.java
+END
+Address.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/flexWorkflow/!svn/ver/2755/MD/VTB-AppLogic/trunk/source/com/vtb/domain/Address.java
+END
+Operator.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/flexWorkflow/!svn/ver/2683/MD/VTB-AppLogic/trunk/source/com/vtb/domain/Operator.java
+END
+SpoOpportunity.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/flexWorkflow/!svn/ver/3414/MD/VTB-AppLogic/trunk/source/com/vtb/domain/SpoOpportunity.java
+END

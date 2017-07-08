@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="timerApp">
+        <wb-resource deploy-path="/" source-path="/"/>
+        <dependent-module deploy-path="/" handle="module:/resource/TimerAppEJB/TimerAppEJB">
+            <dependent-object>EjbModule_1229325052308</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/TimerWEB/TimerWEB">
+            <dependent-object>WebModule_1229327680011</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="VTB-AppLogic.jar" deploy-path="/" handle="module:/resource/VTB-AppLogic/VTB-AppLogic">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="TimerAppLogic.jar" deploy-path="/" handle="module:/resource/TimerAppLogic/TimerAppLogic">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

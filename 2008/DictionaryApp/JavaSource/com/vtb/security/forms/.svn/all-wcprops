@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/flexWorkflow/!svn/ver/3620/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms
+END
+OperatorToRoleListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/flexWorkflow/!svn/ver/2815/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OperatorToRoleListForm.java
+END
+OrganizationGroupListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/flexWorkflow/!svn/ver/2560/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationGroupListForm.java
+END
+OrganizationToGroupListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/flexWorkflow/!svn/ver/3620/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToGroupListForm.java
+END
+GroupToOrganizationListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/flexWorkflow/!svn/ver/3513/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/GroupToOrganizationListForm.java
+END
+OrganizationInfoForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/flexWorkflow/!svn/ver/2528/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationInfoForm.java
+END
+OrganizationCrmInfoForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/flexWorkflow/!svn/ver/3284/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationCrmInfoForm.java
+END
+OrganizationToManagerDialogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/flexWorkflow/!svn/ver/3088/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToManagerDialogForm.java
+END
+GroupCrmToOrganizationListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/flexWorkflow/!svn/ver/3514/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/GroupCrmToOrganizationListForm.java
+END
+OrganizationCrmToGroupListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/flexWorkflow/!svn/ver/3620/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationCrmToGroupListForm.java
+END
+OrganizationToShareholderListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/flexWorkflow/!svn/ver/2921/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToShareholderListForm.java
+END
+OrganizationToGovernListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/flexWorkflow/!svn/ver/2879/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToGovernListForm.java
+END
+OrganizationCrmDialogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/flexWorkflow/!svn/ver/3383/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationCrmDialogForm.java
+END
+OkvedDialogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/flexWorkflow/!svn/ver/3154/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OkvedDialogForm.java
+END
+OrganizationToOkvedListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/flexWorkflow/!svn/ver/3242/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToOkvedListForm.java
+END
+OrganizationToAddressDialogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/flexWorkflow/!svn/ver/2784/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToAddressDialogForm.java
+END
+OrganizationToManagerListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/flexWorkflow/!svn/ver/3070/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToManagerListForm.java
+END
+OkvedLookupListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/flexWorkflow/!svn/ver/3176/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OkvedLookupListForm.java
+END
+OrganizationGroupCrmInfoForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/flexWorkflow/!svn/ver/3539/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationGroupCrmInfoForm.java
+END
+OrganizationGroupDialogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/flexWorkflow/!svn/ver/2536/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationGroupDialogForm.java
+END
+OkvedHierarchyListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/flexWorkflow/!svn/ver/3218/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OkvedHierarchyListForm.java
+END
+OkvedListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/flexWorkflow/!svn/ver/3155/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OkvedListForm.java
+END
+OrganizationGroupLookupListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/flexWorkflow/!svn/ver/2842/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationGroupLookupListForm.java
+END
+OrganizationToGovernDialogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/flexWorkflow/!svn/ver/2880/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToGovernDialogForm.java
+END
+OrganizationToShareholderDialogForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/flexWorkflow/!svn/ver/2906/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToShareholderDialogForm.java
+END
+OrganizationToAddressListForm.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/flexWorkflow/!svn/ver/2787/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/forms/OrganizationToAddressListForm.java
+END

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>
+	SequenceGenerator</display-name>
+	<enterprise-beans>
+		<session id="SequenceSession">
+			<ejb-name>SequenceSession</ejb-name>
+			<home>ru.md.sequence.ejb.SequenceSessionHome</home>
+			<remote>ru.md.sequence.ejb.SequenceSession</remote>
+			<local-home>ru.md.sequence.ejb.SequenceSessionLocalHome</local-home>
+			<local>ru.md.sequence.ejb.SequenceSessionLocal</local>
+			<ejb-class>ru.md.sequence.ejb.SequenceSessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<env-entry>
+				<description>
+				</description>
+				<env-entry-name>retryCount</env-entry-name>
+				<env-entry-type>java.lang.Integer</env-entry-type>
+				<env-entry-value>5</env-entry-value>
+			</env-entry>
+			<env-entry>
+				<description>
+				</description>
+				<env-entry-name>blockSize</env-entry-name>
+				<env-entry-type>java.lang.Integer</env-entry-type>
+				<env-entry-value>10</env-entry-value>
+			</env-entry>
+			<ejb-local-ref id="EJBLocalRef_1227439054781">
+				<description>
+				</description>
+				<ejb-ref-name>ejb/Sequence</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>ru.md.sequence.ejb.SequenceLocalHome</local-home>
+				<local>ru.md.sequence.ejb.SequenceLocal</local>
+				<ejb-link>Sequence</ejb-link>
+			</ejb-local-ref>
+		</session>
+		<entity id="Sequence">
+			<ejb-name>Sequence</ejb-name>
+			<local-home>ru.md.sequence.ejb.SequenceLocalHome</local-home>
+			<local>ru.md.sequence.ejb.SequenceLocal</local>
+			<ejb-class>ru.md.sequence.ejb.SequenceBean</ejb-class>
+			<persistence-type>Bean</persistence-type>
+			<prim-key-class>ru.md.sequence.ejb.SequenceKey</prim-key-class>
+			<reentrant>false</reentrant>
+			<resource-ref id="ResourceRef_1228046986926">
+				<description>
+				</description>
+				<res-ref-name>jdbc/SequenceDB</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Container</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</entity>
+	</enterprise-beans>
+	<ejb-client-jar>SequenceGeneratorClient.jar</ejb-client-jar>
+</ejb-jar>

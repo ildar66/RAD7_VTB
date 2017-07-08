@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applicationbnd:ApplicationBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:applicationbnd="applicationbnd.xmi" xmi:id="ApplicationBinding_1229673766421">
+  <authorizationTable xmi:id="AuthorizationTable_1229673766421">
+    <authorizations xmi:id="RoleAssignment_1229673766421">
+      <specialSubjects xmi:type="applicationbnd:AllAuthenticatedUsers" xmi:id="AllAuthenticatedUsers_1229673766421" name="AllAuthenticatedUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1229673766421"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1229674692296">
+      <users xmi:id="User_1233052802890" name="administratorSPO"/>
+      <role href="META-INF/application.xml#SecurityRole_1229674692296"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1229674692297">
+      <users xmi:id="User_1233052802891" name="administratorUsers"/>
+      <role href="META-INF/application.xml#SecurityRole_1229674692297"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1229674692298">
+      <users xmi:id="User_1233052802892" name="administratorRoles"/>
+      <role href="META-INF/application.xml#SecurityRole_1229674692298"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1229674692299">
+      <users xmi:id="User_1233052802893" name="administratorApprove"/>
+      <role href="META-INF/application.xml#SecurityRole_1229674692299"/>
+    </authorizations>
+    <authorizations xmi:id="RoleAssignment_1233052802890">
+      <users xmi:id="User_1233052802894" name="adminDictionary"/>
+      <role href="META-INF/application.xml#SecurityRole_1233052802890"/>
+    </authorizations>
+  </authorizationTable>
+  <application href="META-INF/application.xml#Application_ID"/>
+</applicationbnd:ApplicationBinding>

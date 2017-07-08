@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/flexWorkflow/!svn/ver/3616/MD/VTB-AppLogic/trunk/source/com/vtb/mapping
+END
+ManagerMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/flexWorkflow/!svn/ver/2987/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/ManagerMapper.java
+END
+SpoOpportunityMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/flexWorkflow/!svn/ver/3132/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/SpoOpportunityMapper.java
+END
+ProcessTypeMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/flexWorkflow/!svn/ver/2801/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/ProcessTypeMapper.java
+END
+GovernMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/flexWorkflow/!svn/ver/2869/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/GovernMapper.java
+END
+ShareholderMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/flexWorkflow/!svn/ver/2901/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/ShareholderMapper.java
+END
+OrganizationGroupMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/flexWorkflow/!svn/ver/3615/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/OrganizationGroupMapper.java
+END
+RoleMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/flexWorkflow/!svn/ver/2816/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/RoleMapper.java
+END
+OrganizationLinkMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/flexWorkflow/!svn/ver/3672/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/OrganizationLinkMapper.java
+END
+OrganizationMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/3673/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/OrganizationMapper.java
+END
+StopFactorMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/flexWorkflow/!svn/ver/2948/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/StopFactorMapper.java
+END
+AddressMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/flexWorkflow/!svn/ver/2748/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/AddressMapper.java
+END
+SPOMessageMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/flexWorkflow/!svn/ver/2467/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/SPOMessageMapper.java
+END
+OkvedMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/flexWorkflow/!svn/ver/3651/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/OkvedMapper.java
+END

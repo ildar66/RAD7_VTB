@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/flexWorkflow/!svn/ver/3603/MD/VTB-AppLogic/trunk/source/com/vtb/model
+END
+DictionaryActionProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/flexWorkflow/!svn/ver/2960/MD/VTB-AppLogic/trunk/source/com/vtb/model/DictionaryActionProcessor.java
+END
+SPOMessageActionProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/flexWorkflow/!svn/ver/2467/MD/VTB-AppLogic/trunk/source/com/vtb/model/SPOMessageActionProcessor.java
+END
+SecurityActionProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/flexWorkflow/!svn/ver/3667/MD/VTB-AppLogic/trunk/source/com/vtb/model/SecurityActionProcessor.java
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/flexWorkflow/!svn/ver/3134/MD/VTB-AppLogic/trunk/source/com/vtb/exception
+END
+NoSuchGovernException.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/flexWorkflow/!svn/ver/2868/MD/VTB-AppLogic/trunk/source/com/vtb/exception/NoSuchGovernException.java
+END
+NoSuchShareholderException.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/flexWorkflow/!svn/ver/2913/MD/VTB-AppLogic/trunk/source/com/vtb/exception/NoSuchShareholderException.java
+END
+NoSuchOrganizationGroupException.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/flexWorkflow/!svn/ver/2541/MD/VTB-AppLogic/trunk/source/com/vtb/exception/NoSuchOrganizationGroupException.java
+END
+NoSuchStopFactorException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/flexWorkflow/!svn/ver/2947/MD/VTB-AppLogic/trunk/source/com/vtb/exception/NoSuchStopFactorException.java
+END
+NoSuchAddressException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/flexWorkflow/!svn/ver/2747/MD/VTB-AppLogic/trunk/source/com/vtb/exception/NoSuchAddressException.java
+END
+NoSuchOkvedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/flexWorkflow/!svn/ver/3134/MD/VTB-AppLogic/trunk/source/com/vtb/exception/NoSuchOkvedException.java
+END
+NoSuchManagerException.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/flexWorkflow/!svn/ver/3055/MD/VTB-AppLogic/trunk/source/com/vtb/exception/NoSuchManagerException.java
+END

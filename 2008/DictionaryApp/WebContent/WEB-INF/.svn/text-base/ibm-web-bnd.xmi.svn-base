@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:common="common.xmi" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1226327407304" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp_ID"/>
+  <resRefBindings xmi:id="ResourceRefBinding_1226763851578" jndiName="jdbc/LOANS">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1226763851578"/>
+  </resRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1226763069890" jndiName="ejb/com/vtb/ejb/DictionaryActionProcessorFacadeHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1226763069890"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1226931531089" jndiName="ejb/com/god/oidgen/OIDGeneratorSessionLocalHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1226931531089"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1227540685911" jndiName="ejb/com/vtb/ejb/SecurityActionProcessorFacadeHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1227540685911"/>
+  </ejbRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1228558389063" jndiName="ejb/ru/md/sequence/ejb/SequenceSessionHome">
+    <bindingEjbRef xmi:type="common:EJBLocalRef" href="WEB-INF/web.xml#EJBLocalRef_1228558389063"/>
+  </ejbRefBindings>
+</webappbnd:WebAppBinding>

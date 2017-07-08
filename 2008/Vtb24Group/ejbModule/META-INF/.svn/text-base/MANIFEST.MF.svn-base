@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: VTB-AppLogic.jar 
+ OIDGenerator.jar 
+ SequenceGeneratorClient.jar
+

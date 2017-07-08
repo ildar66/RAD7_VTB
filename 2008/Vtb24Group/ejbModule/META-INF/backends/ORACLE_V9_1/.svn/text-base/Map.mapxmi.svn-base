@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbrdbmapping:EjbRdbDocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Mapping="Mapping.xmi" xmlns:OracleModel="http:///com/ibm/db/models/oracle/oracle.ecore" xmlns:SQLTables="http:///org/eclipse/wst/rdb/models/sql/tables.ecore" xmlns:ejb="ejb.xmi" xmlns:ejbrdbmapping="ejbrdbmapping.xmi" xmi:id="EjbRdbDocumentRoot_1226585909750" topToBottom="true" commandStack="">
+  <helper xmi:type="ejbrdbmapping:RdbSchemaProperies" xmi:id="RdbSchemaProperies_1226585909750" primitivesDocument="ORACLE_V9"/>
+  <nested xmi:type="ejbrdbmapping:RDBEjbMapper" xmi:id="RDBEjbMapper_1226585956609">
+    <helper xmi:type="ejbrdbmapping:PrimaryTableStrategy" xmi:id="PrimaryTableStrategy_1226585956609">
+      <table xmi:type="OracleModel:OracleTable" href="META-INF/backends/ORACLE_V9_1/MD.dbm#_8U7LRLGNEd234bC5N4S1Gg"/>
+    </helper>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1226585956609">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1226585184859"/>
+      <outputs xmi:type="SQLTables:Column" href="META-INF/backends/ORACLE_V9_1/MD.dbm#_8U7LRbGNEd234bC5N4S1Gg"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.V7.xmi#Integer-NUMBER"/>
+    </nested>
+    <nested xmi:type="ejbrdbmapping:RDBEjbFieldMapper" xmi:id="RDBEjbFieldMapper_1226585956610">
+      <inputs xmi:type="ejb:CMPAttribute" href="META-INF/ejb-jar.xml#CMPAttribute_1226585184953"/>
+      <outputs xmi:type="SQLTables:Column" href="META-INF/backends/ORACLE_V9_1/MD.dbm#_8U7LR7GNEd234bC5N4S1Gg"/>
+      <typeMapping href="JavatoORACLE_V9TypeMaps.V7.xmi#String-VARCHAR"/>
+    </nested>
+    <inputs xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CommissionTypeEJB"/>
+    <outputs xmi:type="OracleModel:OracleTable" href="META-INF/backends/ORACLE_V9_1/MD.dbm#_8U7LRLGNEd234bC5N4S1Gg"/>
+  </nested>
+  <inputs xmi:type="ejb:EJBJar" href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <outputs xmi:type="OracleModel:OracleDatabase" href="META-INF/backends/ORACLE_V9_1/MD.dbm#_5nxlALGNEd234bC5N4S1Gg"/>
+  <typeMapping xmi:type="Mapping:MappingRoot" href="JavatoORACLE_V9TypeMaps.V7.xmi#Java_to_ORACLE_V9_TypeMaps"/>
+</ejbrdbmapping:EjbRdbDocumentRoot>

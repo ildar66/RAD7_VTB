@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigatorItems>
+<!-- <navigatorItem nodeId="tasks" parentId="root" tooltip="Задачи:" value="" link="" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>-->
+	
+	<navigatorItem nodeId="taskSecurity" parentId="root" tooltip="Настройки системы" value="" link="" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_departmentList" parentId="taskSecurity" tooltip="Филиалы" value="" link="/departmentList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	
+	<!--navigatorItem nodeId="nodeId_peopleList" parentId="taskSecurity" tooltip="Физические лица" value="" link="/peopleList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_workPositionList" parentId="taskSecurity" tooltip="Должности" value="" link="/workPositionList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_companyList" parentId="taskSecurity" tooltip="Компании" value="" link="/companyList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_roleList" parentId="taskSecurity" tooltip="Роли" value="" link="/roleList.do" icon="" isExternalLink="false">
+	    <role>administrator</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_msUserList" parentId="taskSecurity" tooltip="Пользователи MS" value="" link="/msUserList.do" icon="" isExternalLink="false">
+		<role>administrator</role>
+	    <role>builder</role>
+	</navigatorItem-->
+	
+	
+	<navigatorItem nodeId="taskDictionary" parentId="root" tooltip="Справочники" value="" link="" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_organizationList" parentId="taskDictionary" tooltip="Организации" value="" link="/organizationList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_organizationGroupList" parentId="taskDictionary" tooltip="Группы клиентов" value="" link="/organizationGroupList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+		<navigatorItem nodeId="nodeId_okvedList" parentId="taskDictionary" tooltip="ОКВЭД компании" value="" link="/okvedList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>		
+	<navigatorItem nodeId="nodeId_ratingTypeList" parentId="taskDictionary" tooltip="Рейтинги" value="" link="/ratingTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_commissionTypeList" parentId="taskDictionary" tooltip="Комиссии" value="" link="/commissionTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_contractorTypeList" parentId="taskDictionary" tooltip="Типы контрагентов" value="" link="/contractorTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_documentGroupList" parentId="taskDictionary" tooltip="Группы документов" value="" link="/documentGroupList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_documentsTypeList" parentId="taskDictionary" tooltip="Типы документов" value="" link="/documentsTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_limitTypeList" parentId="taskDictionary" tooltip="Типы лимитов" value="" link="/limitTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_targetTypeList" parentId="taskDictionary" tooltip="Цели кредитования" value="" link="/targetTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_opportunityTypeList" parentId="taskDictionary" tooltip="Виды сделок" value="" link="/opportunityTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_industryList" parentId="taskDictionary" tooltip="Отрасли" value="" link="/industryList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_regionList" parentId="taskDictionary" tooltip="Регионы" value="" link="/regionList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_patternPaidPercentTypeList" parentId="taskDictionary" tooltip="Порядки уплаты процентов" value="" link="/patternPaidPercentTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_baseRateList" parentId="taskDictionary" tooltip="Базовые ставки" value="" link="/baseRateList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_punitiveMeasureList" parentId="taskDictionary" tooltip="Штрафные санкции" value="" link="/punitiveMeasureList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_authorizedBodyList" parentId="taskDictionary" tooltip="Уполномоченные органы" value="" link="/authorizedBodyList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>
+	<navigatorItem nodeId="nodeId_ownershipFormTypeList" parentId="taskDictionary" tooltip="Организационно-правовые формы" value="" link="/ownershipFormTypeList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>	
+	<navigatorItem nodeId="nodeId_stopFactorList" parentId="taskDictionary" tooltip="Справочник стоп-факторов" value="" link="/stopFactorList.do" icon="" isExternalLink="false">
+	    <role>AllAuthenticated</role>
+	</navigatorItem>	
+				
+</navigatorItems>

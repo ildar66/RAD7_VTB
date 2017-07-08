@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:common="common.xmi" xmlns:ejb="ejb.xmi" xmlns:ejbbnd="ejbbnd.xmi" xmi:id="EJBJarBinding_1226585176968" currentBackendId="ORACLE_V11_1">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1226585177156" jndiName="ejb/com/vtb/ejb/CommissionTypeEJBLocalHome">
+    <enterpriseBean xmi:type="ejb:ContainerManagedEntity" href="META-INF/ejb-jar.xml#CommissionTypeEJB"/>
+    <cmpConnectionFactory xmi:id="CMPConnectionFactoryBinding_1228417523776" jndiName="jdbc/LOANS" resAuth="Per_Connection_Factory"/>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1226753383921" jndiName="ejb/com/vtb/ejb/DictionaryActionProcessorFacadeHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#DictionaryActionProcessorFacade"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1226766346843" jndiName="jdbc/LOANS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1226766346843"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1228142361415" jndiName="ejb/com/vtb/ejb/CommissionTypeEJBLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1228142361415"/>
+    </ejbRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1228462585076" jndiName="ejb/ru/md/sequence/ejb/SequenceSessionHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1228462585076"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1227539631821" jndiName="ejb/com/vtb/ejb/SecurityActionProcessorFacadeHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SecurityActionProcessorFacade"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1227541041701" jndiName="jdbc/LOANS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1227541041701"/>
+    </resRefBindings>
+    <ejbRefBindings xmi:id="EjbRefBinding_1228462585084" jndiName="ejb/ru/md/sequence/ejb/SequenceSessionHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1228462585084"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <defaultCMPConnectionFactory xmi:id="CMPConnectionFactoryBinding_1226585176968" jndiName="jdbc/LOANS" resAuth="Per_Connection_Factory"/>
+</ejbbnd:EJBJarBinding>

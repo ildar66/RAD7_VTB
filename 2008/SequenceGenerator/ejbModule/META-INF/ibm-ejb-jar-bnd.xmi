@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:common="common.xmi" xmlns:ejb="ejb.xmi" xmlns:ejbbnd="ejbbnd.xmi" xmi:id="EJBJarBinding_1227438322328" currentBackendId="ORACLE_V9_1">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1227438867015" jndiName="ejb/ru/md/sequence/ejb/SequenceSessionHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#SequenceSession"/>
+    <ejbRefBindings xmi:id="EjbRefBinding_1227439054781" jndiName="ejb/ru/md/sequence/ejb/SequenceLocalHome">
+      <bindingEjbRef xmi:type="common:EJBLocalRef" href="META-INF/ejb-jar.xml#EJBLocalRef_1227439054781"/>
+    </ejbRefBindings>
+  </ejbBindings>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1228045588317" jndiName="ejb/ru/md/sequence/ejb/SequenceLocalHome">
+    <enterpriseBean xmi:type="ejb:Entity" href="META-INF/ejb-jar.xml#Sequence"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1228046986926" jndiName="jdbc/LOANS">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1228046986926"/>
+    </resRefBindings>
+  </ejbBindings>
+  <defaultCMPConnectionFactory xmi:id="CMPConnectionFactoryBinding_1227438322328" jndiName="jdbc/LOANS" resAuth="Per_Connection_Factory"/>
+</ejbbnd:EJBJarBinding>

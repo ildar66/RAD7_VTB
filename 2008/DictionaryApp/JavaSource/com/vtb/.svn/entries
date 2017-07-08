@@ -1,0 +1,37 @@
+9
+
+dir
+3629
+https://84.253.85.77/svn/flexWorkflow/MD/DictionaryApp/trunk/JavaSource/com/vtb
+https://84.253.85.77/svn/flexWorkflow
+
+
+
+2009-02-18T15:35:16.051590Z
+3621
+ishafigullin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d43abe68-f4e0-e441-97c1-3e37107dc401
+
+dictionary
+dir
+
+forms
+dir
+
+security
+dir
+

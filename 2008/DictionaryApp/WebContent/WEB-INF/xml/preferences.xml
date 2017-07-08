@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferenceItems>
+	<preferenceItem label="label.bannershow.pref" prefType="checkbox" prefEntry="System/workspace#bannerShow" desc="desc.bannershow.pref">
+		<role>AllAuthenticated</role>
+	</preferenceItem>
+	<preferenceItem label="label.navigatorShow.pref" prefType="checkbox" prefEntry="System/workspace#navigatorShow" desc="desc.navigatorShow.pref">
+		<role>AllAuthenticated</role>
+	</preferenceItem>
+</preferenceItems>

@@ -1,0 +1,34 @@
+9
+
+dir
+2265
+https://84.253.85.77/svn/flexWorkflow/MD/OIDGenerator/trunk/ejbModule/META-INF/backends
+https://84.253.85.77/svn/flexWorkflow
+
+
+
+2008-12-01T10:13:47.742989Z
+1028
+ishafigullin
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d43abe68-f4e0-e441-97c1-3e37107dc401
+
+ORACLE_V9_1
+dir
+
+ORACLE_V11_1
+dir
+

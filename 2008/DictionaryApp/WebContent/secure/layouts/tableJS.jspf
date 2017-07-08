@@ -1,0 +1,65 @@
+<%!
+private String isUp(String aSort, String name) {
+ if(aSort.startsWith(name)) {
+	 if(aSort.endsWith("desc")) 
+		return (" <img src='/DictionaryApp/images/Sort_ascend2.gif'  border='0' alt='по возрастанию'> ");
+	 else
+		return (" <img src='/DictionaryApp/images/Sort_desc2.gif'  border='0' alt='по убыванию'> "); 
+ }
+ else return (" <img src='/DictionaryApp/images/Sort_none.gif'  border='0' alt=''> ");      
+}
+%>
+<script language="javascript">
+function toggleA(a){
+	//document.all.isName[0].checked =false;
+	//listForm.name.disabled = false;
+	listForm.searchStr.value=a+'%';
+	listForm.submit();
+}
+function SortBy(field) 
+{
+	var e = document.all.orderBy;
+	e.value = (e.value == field)?field + ' desc':field;
+    document.body.style.cursor="wait";
+	listForm.submit();
+	return false;
+}
+function onMouseOutRow(selectedID){
+	if(document.all.selectedID.value==selectedID) {
+		document.all.tableID.rows(selectedID,0).className="selected";
+	}
+	else {
+		document.all.tableID.rows(selectedID,0).className="normal";
+	}
+}
+function onClickRow(selectedID) {
+	if(document.all.tableID.rows(document.all.selectedID.value) != null){
+		document.all.tableID.rows(document.all.selectedID.value,0).className="normal";
+	}
+	document.all.selectedID.value=selectedID;
+	document.all.tableID.rows(selectedID,0).className="selected";
+	storeSelectedRow(selectedID);
+}
+function storeSelectedRow(selectedID) {
+	document.cookie = listForm.name+"=" + selectedID;
+}
+function loadSelectedRow() {
+	var cookies = document.cookie;
+	//считываем selectedID:
+	var startLoc = cookies.indexOf(listForm.name+"=");
+	if(startLoc == -1)
+	   return;
+	var sepLoc = cookies.indexOf("=", startLoc);
+	var endLoc = cookies.indexOf(";", startLoc);
+	if(endLoc == -1) {
+		endLoc = cookies.length;
+    }
+    document.all.selectedID.value = cookies.substring(sepLoc+1, endLoc);
+    //alert('{'+document.all.selectedID.value+'}');
+	//подчеркиваем строку в таблице:
+	if( document.all.tableID.rows(document.all.selectedID.value) != null ) {
+ 		document.all.tableID.rows(document.all.selectedID.value,0).className="selected";
+	}
+}
+
+</script>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="1.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/application_1_4.xsd">
+	<display-name>
+	vtb</display-name>
+	<module id="EjbModule_1226584783562">
+		<ejb>Vtb24Group.jar</ejb>
+	</module>
+	<module id="WebModule_1226590042765">
+		<web>
+			<web-uri>DictionaryApp.war</web-uri>
+			<context-root>DictionaryApp</context-root>
+		</web>
+	</module>
+	<module id="EjbModule_1226919984687">
+		<ejb>OIDGenerator.jar</ejb>
+	</module>
+	<security-role id="SecurityRole_1229673766421">
+		<role-name>AllAuthenticated</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1229674692296">
+		<description>
+		</description>
+		<role-name>administratorSPO</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1229674692297">
+		<role-name>administratorUsers</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1229674692298">
+		<role-name>administratorRoles</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1229674692299">
+		<role-name>administratorApprove</role-name>
+	</security-role>
+	<security-role id="SecurityRole_1233052802890">
+		<description>
+		Администратор Справочников</description>
+		<role-name>adminDictionary</role-name>
+	</security-role>
+</application>

@@ -1,0 +1,372 @@
+package com.vtb.command;
+
+import java.math.BigDecimal;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ejb.CreateException;
+import javax.ejb.FinderException;
+import javax.ejb.NoSuchEntityException;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
+
+import org.uit.director.config.Config;
+import org.uit.director.contexts.WPC;
+import org.uit.director.db.ejb.DBFlexWorkflowLocal;
+import org.uit.director.db.ejb.DBFlexWorkflowLocalHome;
+import org.uit.director.decider.BusinessProcessDecider;
+import org.uit.director.servletutil.ConvertChars;
+
+import ru.md.sequence.SequenceGeneratorHelper;
+import ru.md.sequence.ejb.SequenceKey;
+import ru.md.sequence.ejb.SequenceLocal;
+import ru.md.sequence.ejb.SequenceLocalHome;
+
+import com.vtb.custom.LoaderFromCRM;
+import com.vtb.domain.SpoAccount;
+import com.vtb.domain.SpoHistory;
+import com.vtb.domain.SpoOpportunity;
+import com.vtb.domain.SpoOpportunityProduct;
+import com.vtb.exception.ModelException;
+import com.vtb.mapping.Mapper;
+import com.vtb.mapping.MapperFactory;
+import com.vtb.mapping.SpoOpportunityMapper;
+import com.vtb.mapping.jdbc.JDBCMapperCRM;
+import com.vtb.system.AppService;
+import com.vtb.system.TraceCapable;
+
+
+public class LoaderFromCRMCommand implements Command {
+
+	private final static String SEQUENCE_TYPE_APPLICATION = "Application";
+	private final static String SEQUENCE_TYPE_CRM_HISTORY = "CRMHistory";
+	
+	private final static String SEQUENCE_EJB = "java:comp/env/ejb/SequenceGenerator";
+	
+	private final static String PUP_CONFIG_PARAM_ADMIN = "ADMINISTRATOR";
+	private final static String PUP_EJB = "java:comp/env/ejb/DBFlexWorkflow";
+	
+	private final static String PUP_PROCESS_NAME_CREDITGO = "Сделка в рамках лимита в ГО";
+	private final static String PUP_PROCESS_NAME_CREDITFILIAL = "Сделка в рамках только Филиала";
+	private final static String PUP_PROCESS_NAME_LIMITGO = "Лимит в ГО";
+	private final static String PUP_PROCESS_NAME_LIMITFILIAL = "Лимит в рамках только Филиала";
+	
+	private final static String PUP_PROCESS_VALUE_TYPE_LIMIT = "Установление кредитного лимита";
+	private final static String PUP_PROCESS_VALUE_TYPE_CREDIT = "Сделка в рамках имеющегося лимита";
+	
+	private final static String PUP_PROCESS_NAME_TYPE_PERIOD = "Дней";
+	
+	private final static String PUP_PROCESS_PARAM_OPPORTUNITY_TYPE = "Тип кредитной заявки";
+	private final static String PUP_PROCESS_PARAM_QUANTITY = "Сумма лимита";
+	private final static String PUP_PROCESS_PARAM_QUANTITY_TYPE = "Валюта";
+	private final static String PUP_PROCESS_PARAM_PERIOD = "Срок действия лимита";
+	private final static String PUP_PROCESS_PARAM_PERIODTYPE = "Тип срока действия";
+	private final static String PUP_PROCESS_PARAM_REGION = "Инициирующее подразделение";
+	private final static String PUP_PROCESS_PARAM_MANAGER = "Менеджер сделки";
+	private final static String PUP_PROCESS_PARAM_OPPORTUNITY_NUM = "Заявка №";
+	//private final static String PUP_PROCESS_PARAM_CONTRACTORS_SPO_ID = "IDSPO_Контрагенты";
+	private final static String PUP_PROCESS_PARAM_CONTRACTORS_CRM_ID = "IDCRM_Контрагенты";
+	//private final static String PUP_PROCESS_PARAM_CONTRACTORS_SPO_NAME = "SPO_Контрагенты";
+	private final static String PUP_PROCESS_PARAM_CONTRACTORS_CRM_NAME = "CRM_Контрагенты";
+	private final static String PUP_PROCESS_PARAM_OPPORTUNITY_ID = "IDCRM_Заявка";
+	
+	/*private SequenceLocal nextIdApplication = null;
+	private SequenceLocal nextIdCRMHistory = null;
+	
+	private long idApplication = 0;
+	private long idCRMHistory = 0;*/
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void execute() throws ModelException {
+		AppService.log(TraceCapable.INFO_LEVEL, "------START executeCommand from CRM !!!---------------");
+		SpoOpportunity spoOpportunity = getNextSpoOpportunity();
+		if (spoOpportunity != null) {			
+			setAccessStatusForSpoOpportunity(spoOpportunity);
+			AppService.log(TraceCapable.INFO_LEVEL, "LoaderFromCRMCommand execute: setAccessStatusForSpoOpportunity success");
+			
+			//Писать в FB_SPO_HISTORY будет PUP
+			//insertSpoHistory(spoOpportunity);
+			//AppService.log(TraceCapable.INFO_LEVEL, "LoaderFromCRMCommand execute: insertSpoHistory success");
+			
+			LoaderFromCRM to = getDataFromCRM(spoOpportunity);
+			AppService.log(TraceCapable.INFO_LEVEL, "LoaderFromCRMCommand execute: getDataFromCRM success");
+			
+			setDataInSPO(to);
+			AppService.log(TraceCapable.INFO_LEVEL, "LoaderFromCRMCommand execute: setDataInSPO success");
+		}
+		AppService.log(TraceCapable.INFO_LEVEL, "------------END executeCommand from CRM !!!------------");
+	}
+
+	/**
+	 * 
+	 */
+	private void setDataInSPO(LoaderFromCRM aTO) throws ModelException {
+		// TODO set Data In SPO;
+		
+		try {
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: beginning...");
+			
+			InitialContext ctx = new InitialContext();
+
+			Object objBean = ctx.lookup(PUP_EJB);
+			
+			DBFlexWorkflowLocalHome dbFlexWorkflowLocalHome = (DBFlexWorkflowLocalHome) objBean;
+			DBFlexWorkflowLocal dbFlexWorkflow = dbFlexWorkflowLocalHome.create();
+			
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: successefully create dbFlexWorkflow");
+			
+			WPC wpc =  WPC.getInstance();
+			if (wpc == null) {
+				String resInitWPC = WPC.init(dbFlexWorkflow);
+				if (!resInitWPC.equalsIgnoreCase("ok")) {
+					//ошибка инициализации
+					throw new Exception("Error in initialization WPC object");
+				}
+			}
+			
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: WPC init successful");
+
+			//Сбор данных из CRM по заявке
+			String typeCRMProcess = aTO.getSpoOpportunity().getSpoType();
+			//TODO не хватает филиал обслуживания, менеджера сделки
+			//String region; //филиал обслуживания, подразделение
+			//String manager; //менеджер сделки 
+			String idCRMContractor = aTO.getAccountVO().getAccountID();
+			String nameCRMContractor = aTO.getAccountVO().getAccount();
+			Integer quantity = new Integer(aTO.getProductVO().getQuantity().intValueExact());
+			String quantityType = aTO.getProductVO().getUnit();
+			String period = aTO.getProductVO().getDays();
+			
+			String idUser = (String)Config.getProperty(PUP_CONFIG_PARAM_ADMIN);
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: idUser = " + idUser);
+			
+			String nameTypeProcess = this.selectNameTypeProcess(typeCRMProcess, /*region*/ null);
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: nameTypeProcess = " + nameTypeProcess);
+			
+			//Integer idTypeProcess = new Integer(wpc.getIdTypeProcessByDescription(ConvertChars.convertToKirr(nameTypeProcess)));
+			Integer idTypeProcess = new Integer(wpc.getIdTypeProcessByDescription(nameTypeProcess));
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: idTypeProcess = " + idTypeProcess.toString());
+			
+			Long idStageBegin = new Long(BusinessProcessDecider.getStartIdStage(idTypeProcess));
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: idStageBegin = " + idStageBegin.toString());
+			
+			//Long idTask = dbFlexWorkflow.createProcess(idTypeProcess, null, idStageBegin, idUser);
+			
+			List<Object[]> params = new ArrayList<Object[]>();
+			
+			long applicationId = SequenceGeneratorHelper.getNextId(SEQUENCE_TYPE_APPLICATION);
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: applicationId = " + applicationId);
+			
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_OPPORTUNITY_NUM, applicationId));
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_CONTRACTORS_CRM_ID, idCRMContractor));
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_CONTRACTORS_CRM_NAME, nameCRMContractor));
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_OPPORTUNITY_TYPE, this.selectNameTypeOpportunity(typeCRMProcess)));
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_QUANTITY, quantity));
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_QUANTITY_TYPE, quantityType));
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_PERIOD, period));
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_PERIODTYPE, PUP_PROCESS_NAME_TYPE_PERIOD));
+			params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_OPPORTUNITY_ID, aTO.getSpoOpportunity().getId()));
+			//params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_REGION, region));
+			//params.add(this.assignValuesForProcess(idTypeProcess, PUP_PROCESS_PARAM_MANAGER, manager));
+			
+			Long idTask = dbFlexWorkflow.createProcessAndSetAttributes(idTypeProcess, null, idStageBegin, idUser, params, WPC.getInstance().getControlType(idTypeProcess)); 
+			
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: idTask = " + idTask.toString());
+			
+			if (idTask != null && idTask > 0) 
+				dbFlexWorkflow.refuseWork(idTask, idUser);
+			else 
+				throw new Exception("Error in creating PUP opportunity");
+			
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: Creation PUP process successful");			
+			
+		} catch (Exception e) {
+			AppService.log(TraceCapable.INFO_LEVEL, "setDataInSPO: Error = " + e.getMessage());
+			e.printStackTrace();
+			
+			throw new ModelException(e, ("Exception caught in setDataInSPO " + e));
+		}
+	}
+	
+	private String selectNameTypeOpportunity(String typeCRMProcess) {
+		String result = null;
+		if (typeCRMProcess.equalsIgnoreCase(SpoOpportunity.SPO_TYPE_CREDIT)) {
+			result = PUP_PROCESS_VALUE_TYPE_CREDIT;
+		} else if (typeCRMProcess.equalsIgnoreCase(SpoOpportunity.SPO_TYPE_LIMIT)) {
+			result = PUP_PROCESS_VALUE_TYPE_LIMIT;
+		}
+		
+		return result;
+	}
+	
+	private String selectNameTypeProcess(String typeCRMProcess, String region) {
+		String result = null;
+		if (typeCRMProcess.equalsIgnoreCase(SpoOpportunity.SPO_TYPE_CREDIT)) {
+			//if (region.startsWith("000"))
+				result = PUP_PROCESS_NAME_CREDITGO;
+			//else
+			//	result = PUP_PROCESS_NAME_CREDITFILIAL;
+		} else if (typeCRMProcess.equalsIgnoreCase(SpoOpportunity.SPO_TYPE_LIMIT)) {
+			//if (region.startsWith("000"))
+				result = PUP_PROCESS_NAME_LIMITGO;
+			//else
+			//	result = PUP_PROCESS_NAME_LIMITFILIAL;
+		}
+		
+		return result;
+	}
+	
+	private Object[] assignValuesForProcess(Integer idTypeProcess, String valueName, Object value) {
+		Object param[] = new Object[3];
+		param[0] = idTypeProcess;
+		param[1] = WPC.getInstance().getIdVariableByDescription(valueName, idTypeProcess);
+		param[2] = value;
+		
+		return param;
+	}
+
+	/**
+	 * 
+	 */
+	private LoaderFromCRM getDataFromCRM(SpoOpportunity spoOpportunity) throws ModelException {
+		try {
+			//init SpoAccount:
+			Mapper mapper = MapperFactory.getSystemMapperFactory().getMapper(SpoAccount.class);
+			
+			AppService.log(TraceCapable.INFO_LEVEL, "getDataFromCRM: AccountID =" + spoOpportunity.getAccountID().trim());
+			
+			SpoAccount acc = (SpoAccount) mapper.findByPrimaryKey(new SpoAccount(spoOpportunity
+					.getAccountID().trim()));
+			AppService.log(TraceCapable.INFO_LEVEL, "getDataFromCRM: acc =" + acc);
+			//init SpoProduct:
+			mapper = MapperFactory.getSystemMapperFactory().getMapper(SpoOpportunityProduct.class);
+			
+			AppService.log(TraceCapable.INFO_LEVEL, "getDataFromCRM: OpportunityID =" + spoOpportunity.getOpportunityID().trim());
+			
+			SpoOpportunityProduct product = (SpoOpportunityProduct) mapper.findByPrimaryKey(new SpoOpportunityProduct(spoOpportunity
+					.getOpportunityID().trim()));
+			AppService.log(TraceCapable.INFO_LEVEL, "getDataFromCRM: product =" + product);
+			//return LoaderFromCRM vo:
+			LoaderFromCRM retVO = new LoaderFromCRM(spoOpportunity);
+			retVO.setAccountVO(acc);
+			retVO.setProductVO(product);
+			return retVO;
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new ModelException(e, ("Exception caught in getDataFromCRM " + e));
+		}
+	}
+
+	/**
+	 * @param spoOpportunity
+	 * @throws ModelException
+	 */
+	private void insertSpoHistory(SpoOpportunity spoOpportunity) throws ModelException {
+		String aID = String.valueOf(SequenceGeneratorHelper.getNextId(SEQUENCE_TYPE_CRM_HISTORY));
+		//String aID = String.valueOf(System.currentTimeMillis()).substring(1);//TODO Заменить на генератор.
+		SpoHistory spoHistory = new SpoHistory(aID, "spoExpert", spoOpportunity.getId(), "spostep", new Date(System
+				.currentTimeMillis()));
+		try {
+			Mapper mapper = MapperFactory.getSystemMapperFactory().getMapper(SpoHistory.class);
+			mapper.insert(spoHistory);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new ModelException(e, ("Exception caught in SpoHistoryMapper.update " + e));
+		}
+	}
+
+	/**
+	 * @param spoOpportunity
+	 * @throws ModelException
+	 */
+	private void setAccessStatusForSpoOpportunity(SpoOpportunity spoOpportunity) throws ModelException {
+		AppService.log(TraceCapable.INFO_LEVEL, "setAccessStatusForSpoOpportunity: beginning...");
+		
+		//final String _storeString = "UPDATE "
+		//	+ "sysdba.FB_SPO_OPPORTUNITY@CRM_LINK  SET SPOACCEPT = ?, SPOACCEPTDATE = ?  WHERE FB_SPO_OPPORTUNITYID = ?";
+		
+		//final String _storeString = "UPDATE "
+		//	+ "sysdba.FB_SPO_OPPORTUNITY  SET SPOACCEPT = ?, SPOACCEPTDATE = ?  WHERE FB_SPO_OPPORTUNITYID = ?";
+		
+		/*Connection conn = null;
+		PreparedStatement stmn = null;
+		try {
+			InitialContext ctx = new InitialContext();
+		    DataSource ds = (DataSource)ctx.lookup("jdbc/LOANS");
+		    conn = ds.getConnection();
+		    
+		    AppService.log(TraceCapable.INFO_LEVEL, "setAccessStatusForSpoOpportunity: get connection autocommit: " + conn.getAutoCommit());
+		    
+		    stmn = conn.prepareStatement(_storeString);	
+		    stmn.setObject(1, "1");
+		    stmn.setObject(2, new Date(System.currentTimeMillis()));
+		    stmn.setObject(3, spoOpportunity.getId());
+		    
+		    AppService.log(TraceCapable.INFO_LEVEL, "setAccessStatusForSpoOpportunity: spoOpportunity id = " + spoOpportunity.getId());
+		    
+		    stmn.executeUpdate();
+		    //conn.commit();
+		    AppService.log(TraceCapable.INFO_LEVEL, "setAccessStatusForSpoOpportunity: update query");
+		} catch (Exception e) {
+			AppService.log(TraceCapable.INFO_LEVEL, "setAccessStatusForSpoOpportunity: error");
+			e.printStackTrace();
+		} finally {
+			try {
+				if (stmn != null)
+					stmn.close();
+				if (conn != null) 
+					conn.close();
+			} catch (Exception e) {
+				
+			}
+		}*/
+		
+		
+		spoOpportunity.setSpoAccept(SpoOpportunity.SPO_ACCEPT_OK);
+		spoOpportunity.setSpoAcceptDate(new Date(System.currentTimeMillis()));
+		SpoOpportunityMapper mapper = null;
+		try {
+			mapper = (SpoOpportunityMapper) MapperFactory.getSystemMapperFactory().getMapper(SpoOpportunity.class);
+			mapper.update(spoOpportunity);
+		} catch (Exception e) {
+			AppService.log(TraceCapable.INFO_LEVEL, "setAccessStatusForSpoOpportunity: error " + e.getMessage());
+			e.printStackTrace();
+			throw new ModelException(e, ("Exception caught in SpoOpportunityMapper.update " + e));
+		}
+		
+		AppService.log(TraceCapable.INFO_LEVEL, "setAccessStatusForSpoOpportunity: success");
+	}
+
+	/**
+	 * @throws ModelException
+	 */
+	private SpoOpportunity getNextSpoOpportunity() throws ModelException {
+		ArrayList list = null;
+		SpoOpportunityMapper mapper = null;
+		SpoOpportunity retValue = null;
+		try {
+			mapper = (SpoOpportunityMapper) MapperFactory.getSystemMapperFactory().getMapper(SpoOpportunity.class);
+			list = mapper.findByFilter(SpoOpportunity.SPO_ACCEPT_OK, SpoOpportunity.SPO_SEND_OK, "spoSendDate");
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new ModelException(e, ("Exception caught in SpoOpportunityMapper.findByFilter " + e));
+		}
+		AppService.log(TraceCapable.INFO_LEVEL, "getNextSpoOpportunity: listSpoOpportunity.size() =" + list.size());
+		if (list != null && list.size() > 0) {
+			retValue = (SpoOpportunity) list.get(0);
+			AppService.log(TraceCapable.INFO_LEVEL, "getNextSpoOpportunity: listSpoOpportunity[0] =" + retValue);
+		}
+		return retValue;
+	}
+
+}

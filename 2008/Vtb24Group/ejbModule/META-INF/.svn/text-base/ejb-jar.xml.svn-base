@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>
+	Vtb24Group</display-name>
+	<enterprise-beans>
+		<entity id="CommissionTypeEJB">
+			<ejb-name>CommissionTypeEJB</ejb-name>
+			<local-home>com.vtb.ejb.CommissionTypeEJBLocalHome</local-home>
+			<local>com.vtb.ejb.CommissionTypeEJBLocal</local>
+			<ejb-class>com.vtb.ejb.CommissionTypeEJBBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.Integer</prim-key-class>
+			<reentrant>false</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>CommissionTypeEJB</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1226585184859">
+				<field-name>id</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1226585184953">
+				<field-name>name</field-name>
+			</cmp-field>
+			<primkey-field>id</primkey-field>
+		</entity>
+		<session id="DictionaryActionProcessorFacade">
+			<ejb-name>DictionaryActionProcessorFacade</ejb-name>
+			<home>com.vtb.ejb.DictionaryActionProcessorFacadeHome</home>
+			<remote>com.vtb.ejb.DictionaryActionProcessorFacade</remote>
+			<local-home>com.vtb.ejb.DictionaryActionProcessorFacadeLocalHome</local-home>
+			<local>com.vtb.ejb.DictionaryActionProcessorFacadeLocal</local>
+			<ejb-class>com.vtb.ejb.DictionaryActionProcessorFacadeBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1228142361415">
+				<description>
+				</description>
+				<ejb-ref-name>ejb/CommissionTypeEJB</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.vtb.ejb.CommissionTypeEJBLocalHome</local-home>
+				<local>com.vtb.ejb.CommissionTypeEJBLocal</local>
+				<ejb-link>CommissionTypeEJB</ejb-link>
+			</ejb-local-ref>
+			<ejb-local-ref id="EJBLocalRef_1228462585076">
+				<description>
+				</description>
+				<ejb-ref-name>ejb/SequenceGenerator</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<local-home>ru.md.sequence.ejb.SequenceSessionLocalHome</local-home>
+				<local>ru.md.sequence.ejb.SequenceSessionLocal</local>
+				<ejb-link>SequenceGenerator.jar#SequenceSession</ejb-link>
+			</ejb-local-ref>
+			<resource-ref id="ResourceRef_1226766346843">
+				<description>
+				</description>
+				<res-ref-name>jdbc/VTBLOANS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Application</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+		<session id="SecurityActionProcessorFacade">
+			<ejb-name>SecurityActionProcessorFacade</ejb-name>
+			<home>com.vtb.ejb.SecurityActionProcessorFacadeHome</home>
+			<remote>com.vtb.ejb.SecurityActionProcessorFacade</remote>
+			<local-home>com.vtb.ejb.SecurityActionProcessorFacadeLocalHome</local-home>
+			<local>com.vtb.ejb.SecurityActionProcessorFacadeLocal</local>
+			<ejb-class>com.vtb.ejb.SecurityActionProcessorFacadeBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1228462585084">
+				<description>
+				</description>
+				<ejb-ref-name>ejb/SequenceGenerator</ejb-ref-name>
+				<ejb-ref-type>Session</ejb-ref-type>
+				<local-home>ru.md.sequence.ejb.SequenceSessionLocalHome</local-home>
+				<local>ru.md.sequence.ejb.SequenceSessionLocal</local>
+				<ejb-link>SequenceGenerator.jar#SequenceSession</ejb-link>
+			</ejb-local-ref>
+			<resource-ref id="ResourceRef_1227541041701">
+				<description>
+				</description>
+				<res-ref-name>jdbc/VTBLOANS</res-ref-name>
+				<res-type>javax.sql.DataSource</res-type>
+				<res-auth>Application</res-auth>
+				<res-sharing-scope>Shareable</res-sharing-scope>
+			</resource-ref>
+		</session>
+	</enterprise-beans>
+</ejb-jar>

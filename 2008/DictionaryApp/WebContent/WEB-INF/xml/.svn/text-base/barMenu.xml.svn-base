@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menuBarItems>
+	<menuBarItem value="Home" link="secure/content.jsp" icon="" tooltip="" target="detail">
+	    <role>AllAuthenticated</role>
+	</menuBarItem>
+	<menuBarItem value="Preferences" link="menuBarCmd.do?forwardName=preferences" icon="" tooltip="" target="detail">
+	    <role>administrator</role>
+	</menuBarItem>
+	<menuBarItem value="Logout" link="logoff.do" icon="" tooltip="" target="_top">
+	    <role>AllAuthenticated</role>
+	</menuBarItem>		
+</menuBarItems>

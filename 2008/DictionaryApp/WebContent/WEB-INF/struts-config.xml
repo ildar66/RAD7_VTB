@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+
+	<!-- Источники данных -->
+	<data-sources></data-sources>
+
+	<!-- Объекты Form Bean -->
+	<form-beans>
+		<form-bean name="logonForm"
+			type="com.vtb.security.console.core.form.LogonForm">
+		</form-bean>
+		<form-bean name="errorForm"
+			type="com.vtb.security.console.core.form.ErrorForm">
+		</form-bean>
+		<form-bean name="PreferenceForm"
+			type="com.vtb.security.console.core.form.PreferencesForm" />
+			
+		<form-bean name="RatingTypeListForm"
+			type="com.vtb.dictionary.forms.RatingTypeListForm" />
+		<form-bean name="RatingTypeDialogForm"
+			type="com.vtb.dictionary.forms.RatingTypeDialogForm" />
+			
+		<form-bean name="CommissionTypeListForm"
+			type="com.vtb.dictionary.forms.CommissionTypeListForm" />
+		<form-bean name="CommissionTypeDialogForm"
+			type="com.vtb.dictionary.forms.CommissionTypeDialogForm" />
+
+		<form-bean name="ContractorTypeListForm"
+			type="com.vtb.dictionary.forms.ContractorTypeListForm" />
+		<form-bean name="ContractorTypeDialogForm"
+			type="com.vtb.dictionary.forms.ContractorTypeDialogForm" />
+			
+		<form-bean name="DocumentsTypeListForm"
+			type="com.vtb.dictionary.forms.DocumentsTypeListForm" />
+		<form-bean name="DocumentsTypeDialogForm"
+			type="com.vtb.dictionary.forms.DocumentsTypeDialogForm" />
+			
+		<form-bean name="LimitTypeListForm"
+			type="com.vtb.dictionary.forms.LimitTypeListForm" />
+		<form-bean name="LimitTypeDialogForm"
+			type="com.vtb.dictionary.forms.LimitTypeDialogForm" />
+			
+		<form-bean name="TargetTypeListForm"
+			type="com.vtb.dictionary.forms.TargetTypeListForm" />
+		<form-bean name="TargetTypeDialogForm"
+			type="com.vtb.dictionary.forms.TargetTypeDialogForm" />
+			
+		<form-bean name="DepartmentListForm"
+			type="com.vtb.security.forms.DepartmentListForm" />
+		<form-bean name="DepartmentDialogForm"
+			type="com.vtb.security.forms.DepartmentDialogForm" />
+		<form-bean name="SpoSettingDialogForm"
+			type="com.vtb.security.forms.SpoSettingDialogForm" />
+		<form-bean name="DepartmentToOperatorListForm"
+			type="com.vtb.security.forms.DepartmentToOperatorListForm" />
+		<form-bean name="DepartmentToOperatorDialogForm"
+			type="com.vtb.security.forms.DepartmentToOperatorDialogForm" />
+		<form-bean name="DepartmentToMqSchedulerSheetListForm"
+			type="com.vtb.security.forms.DepartmentToMqSchedulerSheetListForm" />
+		<form-bean name="MqSchedulerSheetDialogForm"
+			type="com.vtb.security.forms.MqSchedulerSheetDialogForm" />
+
+		<form-bean name="OperatorToRoleListForm"
+			type="com.vtb.security.forms.OperatorToRoleListForm" />
+			
+		<form-bean name="OpportunityTypeListForm"
+			type="com.vtb.dictionary.forms.OpportunityTypeListForm" />
+		<form-bean name="OpportunityTypeDialogForm"
+			type="com.vtb.dictionary.forms.OpportunityTypeDialogForm" />
+			
+		<form-bean name="IndustryListForm"
+			type="com.vtb.dictionary.forms.IndustryListForm" />
+		<form-bean name="IndustryDialogForm"
+			type="com.vtb.dictionary.forms.IndustryDialogForm" />
+
+		<form-bean name="RegionListForm"
+			type="com.vtb.dictionary.forms.RegionListForm" />
+		<form-bean name="RegionDialogForm"
+			type="com.vtb.dictionary.forms.RegionDialogForm" />
+			
+		<form-bean name="PatternPaidPercentTypeListForm"
+			type="com.vtb.dictionary.forms.PatternPaidPercentTypeListForm" />
+		<form-bean name="PatternPaidPercentTypeDialogForm"
+			type="com.vtb.dictionary.forms.PatternPaidPercentTypeDialogForm" />			
+						
+		<form-bean name="BaseRateListForm"
+			type="com.vtb.dictionary.forms.BaseRateListForm" />
+		<form-bean name="BaseRateDialogForm"
+			type="com.vtb.dictionary.forms.BaseRateDialogForm" />
+			
+		<form-bean name="PunitiveMeasureListForm"
+			type="com.vtb.dictionary.forms.PunitiveMeasureListForm" />
+		<form-bean name="PunitiveMeasureDialogForm"
+			type="com.vtb.dictionary.forms.PunitiveMeasureDialogForm" />
+			
+		<form-bean name="AuthorizedBodyListForm"
+			type="com.vtb.dictionary.forms.AuthorizedBodyListForm" />
+		<form-bean name="AuthorizedBodyDialogForm"
+			type="com.vtb.dictionary.forms.AuthorizedBodyDialogForm" />
+			
+		<form-bean name="OrganizationListForm"
+			type="com.vtb.security.forms.OrganizationListForm" />
+		<form-bean name="OrganizationDialogForm"
+			type="com.vtb.security.forms.OrganizationDialogForm" />
+		<form-bean name="OrganizationLookupListForm"
+			type="com.vtb.security.forms.OrganizationLookupListForm" />
+		<form-bean name="OrganizationInfoForm"
+			type="com.vtb.security.forms.OrganizationInfoForm" />
+		<form-bean name="OrganizationCrmInfoForm"
+			type="com.vtb.security.forms.OrganizationCrmInfoForm" />
+		<form-bean name="OrganizationCrmDialogForm"
+			type="com.vtb.security.forms.OrganizationCrmDialogForm" />						
+						
+		<form-bean name="OrganizationToAddressListForm"
+			type="com.vtb.security.forms.OrganizationToAddressListForm" />
+		<form-bean name="OrganizationToAddressDialogForm"
+			type="com.vtb.security.forms.OrganizationToAddressDialogForm" />
+			
+		<form-bean name="OrganizationToGroupListForm"
+			type="com.vtb.security.forms.OrganizationToGroupListForm" />
+		<form-bean name="OrganizationCrmToGroupListForm"
+			type="com.vtb.security.forms.OrganizationCrmToGroupListForm" />			
+			
+		<form-bean name="OrganizationToOkvedListForm"
+			type="com.vtb.security.forms.OrganizationToOkvedListForm" />												
+			
+		<form-bean name="DocumentGroupListForm"
+			type="com.vtb.dictionary.forms.DocumentGroupListForm" />
+		<form-bean name="DocumentGroupDialogForm"
+			type="com.vtb.dictionary.forms.DocumentGroupDialogForm" />
+			
+		<form-bean name="OwnershipFormTypeListForm"
+			type="com.vtb.dictionary.forms.OwnershipFormTypeListForm" />
+		<form-bean name="OwnershipFormTypeDialogForm"
+			type="com.vtb.dictionary.forms.OwnershipFormTypeDialogForm" />
+			
+		<form-bean name="OrganizationGroupListForm"
+			type="com.vtb.security.forms.OrganizationGroupListForm" />
+		<form-bean name="OrganizationGroupDialogForm"
+			type="com.vtb.security.forms.OrganizationGroupDialogForm" />
+		<form-bean name="GroupToOrganizationListForm"
+			type="com.vtb.security.forms.GroupToOrganizationListForm" />
+		<form-bean name="OrganizationGroupLookupListForm"
+			type="com.vtb.security.forms.OrganizationGroupLookupListForm" />
+		<form-bean name="GroupCrmToOrganizationListForm"
+			type="com.vtb.security.forms.GroupCrmToOrganizationListForm" />
+		<form-bean name="OrganizationGroupCrmInfoForm"
+			type="com.vtb.security.forms.OrganizationGroupCrmInfoForm" />						
+			
+		<form-bean name="OrganizationToGovernListForm"
+			type="com.vtb.security.forms.OrganizationToGovernListForm" />
+		<form-bean name="OrganizationToGovernDialogForm"
+			type="com.vtb.security.forms.OrganizationToGovernDialogForm" />
+			
+		<form-bean name="OrganizationToShareholderListForm"
+			type="com.vtb.security.forms.OrganizationToShareholderListForm" />
+		<form-bean name="OrganizationToShareholderDialogForm"
+			type="com.vtb.security.forms.OrganizationToShareholderDialogForm" />
+			
+		<form-bean name="StopFactorListForm"
+			type="com.vtb.dictionary.forms.StopFactorListForm" />
+		<form-bean name="StopFactorDialogForm"
+			type="com.vtb.dictionary.forms.StopFactorDialogForm" />
+			
+		<form-bean name="OrganizationToManagerListForm"
+			type="com.vtb.security.forms.OrganizationToManagerListForm" />
+		<form-bean name="OrganizationToManagerDialogForm"
+			type="com.vtb.security.forms.OrganizationToManagerDialogForm" />																	
+
+		<form-bean name="OkvedListForm"
+			type="com.vtb.security.forms.OkvedListForm" />
+		<form-bean name="OkvedDialogForm"
+			type="com.vtb.security.forms.OkvedDialogForm" />
+		<form-bean name="OkvedLookupListForm"
+			type="com.vtb.security.forms.OkvedLookupListForm" />
+		<form-bean name="OkvedHierarchyListForm"
+			type="com.vtb.security.forms.OkvedHierarchyListForm" />						
+
+	</form-beans>
+
+	<!-- Глобальные исключительные ситуации -->
+	<global-exceptions></global-exceptions>
+
+	<!-- Глобальные пересылки -->
+	<global-forwards>
+		<forward name="error" path="/pages/error.jsp"></forward>
+	</global-forwards>
+
+	<!-- Преобразования действий -->
+	<action-mappings>
+		<action path="/logon"
+			type="com.vtb.security.console.core.action.LogonAction"
+			scope="request" name="logonForm">
+			<forward name="success" path="secure/console.jsp" />
+			<!--forward name="userExists" path="secure/loginConflict.jsp" /-->
+			<!--forward name="changesFound" path="secure/changesFound.jsp" /-->
+			<!--forward name="wait" path="secure/logon.jsp" /-->
+			<!--forward name="continue" path="secure/logon.jsp" /-->
+			<forward name="logonError" path="/logonError.jsp" />
+		</action>
+		<action path="/statusTray"
+			type="com.vtb.security.console.core.action.StatusAction">
+			<!--forward name="forwardName" path="console.status.main" /-->
+			<forward name="success" path="secure/status.jsp" />
+		</action>
+		<action name="errorForm" path="/error"
+			type="com.vtb.security.console.core.action.ErrorAction">
+			<forward name="success" path="/error.jsp" />
+			<forward name="failure" path="/error.jsp" />
+		</action>
+		<action path="/logoff"
+			type="com.vtb.security.console.core.action.LogoffAction">
+			<!--forward name="modsfound" path="/syncworkspace.do?syncaction=list&amp;logoff=true" /-->
+			<forward name="success" path="/secure/logon.jsp" />
+			<forward name="secure"
+				path="ibm_security_logout?logoutExitPage=//DictionaryApp/secure/logon.jsp" />
+		</action>
+		<action path="/menuBarCmd"
+			type="com.vtb.security.console.core.action.MenuBarAction">
+			<forward name="preferences"
+				path="/secure/tiles/preferences.jsp" />
+			<forward name="toggleDescriptions"
+				path="/secure/banner.jsp" />
+		</action>
+		<action name="PreferenceForm" path="/preferenceAction"
+			type="com.vtb.security.console.core.action.PreferenceAction">
+			<!--forward name="success" path="console.status.main" /-->
+			<forward name="success" path="secure/console.jsp" />
+		</action>
+		
+		<action path="/ratingTypeList" type="com.vtb.dictionary.actions.RatingTypeListAction" name="RatingTypeListForm" scope="session">
+			<forward name="success" path="/pages/ratingTypeList.jsp"/>
+		</action>
+		<action path="/ratingTypeDialog" type="com.vtb.dictionary.actions.RatingTypeDialogAction" name="RatingTypeDialogForm"  scope="request" input="/ratingTypeList.do">
+			<forward name="success" path="/pages/ratingTypeForm.jsp"/>
+		</action>
+		<action path="/ratingTypeProcess" type="com.vtb.dictionary.actions.RatingTypeProcessAction" name="RatingTypeDialogForm" scope="request" input="/pages/ratingTypeForm.jsp">
+			<forward name="success" path="/ratingTypeList.do"/>
+		</action>
+		
+		<action path="/commissionTypeList" type="com.vtb.dictionary.actions.CommissionTypeListAction" name="CommissionTypeListForm" scope="session">
+			<forward name="success" path="/pages/commissionTypeList.jsp"/>
+		</action>
+		<action path="/commissionTypeDialog" type="com.vtb.dictionary.actions.CommissionTypeDialogAction" name="CommissionTypeDialogForm"  scope="request" input="/commissionTypeList.do">
+			<forward name="success" path="/pages/commissionTypeForm.jsp"/>
+		</action>
+		<action path="/commissionTypeProcess" type="com.vtb.dictionary.actions.CommissionTypeProcessAction" name="CommissionTypeDialogForm" scope="request" input="/pages/commissionTypeForm.jsp">
+			<forward name="success" path="/commissionTypeList.do"/>
+		</action>
+
+		<action path="/contractorTypeList" type="com.vtb.dictionary.actions.ContractorTypeListAction" name="ContractorTypeListForm" scope="session">
+			<forward name="success" path="/pages/contractorTypeList.jsp"/>
+		</action>
+		<action path="/contractorTypeDialog" type="com.vtb.dictionary.actions.ContractorTypeDialogAction" name="ContractorTypeDialogForm"  scope="request" input="/contractorTypeList.do">
+			<forward name="success" path="/pages/contractorTypeForm.jsp"/>
+		</action>
+		<action path="/contractorTypeProcess" type="com.vtb.dictionary.actions.ContractorTypeProcessAction" name="ContractorTypeDialogForm" scope="request" input="/pages/contractorTypeForm.jsp">
+			<forward name="success" path="/contractorTypeList.do"/>
+		</action>
+				
+		<action path="/documentsTypeList" type="com.vtb.dictionary.actions.DocumentsTypeListAction" name="DocumentsTypeListForm" scope="session">
+			<forward name="success" path="/pages/documentsTypeList.jsp"/>
+		</action>
+		<action path="/documentsTypeDialog" type="com.vtb.dictionary.actions.DocumentsTypeDialogAction" name="DocumentsTypeDialogForm"  scope="request" input="/documentsTypeList.do">
+			<forward name="success" path="/pages/documentsTypeForm.jsp"/>
+		</action>
+		<action path="/documentsTypeProcess" type="com.vtb.dictionary.actions.DocumentsTypeProcessAction" name="DocumentsTypeDialogForm" scope="request" input="/pages/documentsTypeForm.jsp">
+			<forward name="success" path="/documentsTypeList.do"/>
+		</action>
+		
+		<action path="/limitTypeList" type="com.vtb.dictionary.actions.LimitTypeListAction" name="LimitTypeListForm" scope="session">
+			<forward name="success" path="/pages/limitTypeList.jsp"/>
+		</action>
+		<action path="/limitTypeDialog" type="com.vtb.dictionary.actions.LimitTypeDialogAction" name="LimitTypeDialogForm"  scope="request" input="/limitTypeList.do">
+			<forward name="success" path="/pages/limitTypeForm.jsp"/>
+		</action>
+		<action path="/limitTypeProcess" type="com.vtb.dictionary.actions.LimitTypeProcessAction" name="LimitTypeDialogForm" scope="request" input="/pages/limitTypeForm.jsp">
+			<forward name="success" path="/limitTypeList.do"/>
+		</action>
+		
+		<action path="/targetTypeList" type="com.vtb.dictionary.actions.TargetTypeListAction" name="TargetTypeListForm" scope="session">
+			<forward name="success" path="/pages/targetTypeList.jsp"/>
+		</action>
+		<action path="/targetTypeDialog" type="com.vtb.dictionary.actions.TargetTypeDialogAction" name="TargetTypeDialogForm"  scope="request" input="/targetTypeList.do">
+			<forward name="success" path="/pages/targetTypeForm.jsp"/>
+		</action>
+		<action path="/targetTypeProcess" type="com.vtb.dictionary.actions.TargetTypeProcessAction" name="TargetTypeDialogForm" scope="request" input="/pages/targetTypeForm.jsp">
+			<forward name="success" path="/targetTypeList.do"/>
+		</action>
+		
+		<action path="/departmentList" type="com.vtb.security.actions.DepartmentListAction" name="DepartmentListForm" scope="session">
+			<forward name="success" path="/pages/departmentList.jsp"/>
+		</action>
+		<action path="/departmentDialog" type="com.vtb.security.actions.DepartmentDialogAction" name="DepartmentDialogForm"  scope="request" input="/departmentList.do">
+			<forward name="success" path="/pages/departmentForm.jsp"/>
+		</action>
+		<action path="/departmentProcess" type="com.vtb.security.actions.DepartmentProcessAction" name="DepartmentDialogForm" scope="request" input="/pages/departmentForm.jsp">
+			<forward name="success" path="/departmentList.do"/>
+			<forward name="error" path="/pages/departmentForm.jsp"/>
+		</action>
+		<action path="/spoSettingDialog" type="com.vtb.security.actions.SpoSettingDialogAction" name="SpoSettingDialogForm"  scope="request" input="/departmentList.do">
+			<forward name="success" path="/pages/spoSettingForm.jsp"/>
+		</action>
+		<action path="/spoSettingProcess" type="com.vtb.security.actions.SpoSettingProcessAction" name="SpoSettingDialogForm" scope="request" input="/pages/spoSettingForm.jsp">
+			<forward name="success" path="/departmentList.do"/>
+		</action>
+		
+		<action path="/departmentToOperatorList" type="com.vtb.security.actions.DepartmentToOperatorListAction" name="DepartmentToOperatorListForm" scope="session">
+			<forward name="success" path="/pages/departmentToOperatorList.jsp"/>
+		</action>
+		<action path="/departmentToOperatorDialog" type="com.vtb.security.actions.DepartmentToOperatorDialogAction" name="DepartmentToOperatorDialogForm"  scope="request" input="/departmentToOperatorList.do">
+			<forward name="success" path="/pages/departmentToOperatorForm.jsp"/>
+		</action>
+		<action path="/departmentToOperatorProcess" type="com.vtb.security.actions.DepartmentToOperatorProcessAction" name="DepartmentToOperatorDialogForm" scope="request" input="/pages/departmentToOperatorForm.jsp">
+			<forward name="success" path="/departmentToOperatorList.do"/>
+			<forward name="error" path="/pages/departmentToOperatorForm.jsp"/>
+		</action>
+		
+		<action path="/operatorToRoleList" type="com.vtb.security.actions.OperatorToRoleListAction" name="OperatorToRoleListForm" scope="request">
+			<forward name="success" path="/pages/operatorToRoleList.jsp"/>
+		</action>
+		
+		<action path="/departmentToMqSchedulerSheetList" type="com.vtb.security.actions.DepartmentToMqSchedulerSheetListAction" name="DepartmentToMqSchedulerSheetListForm" scope="session">
+			<forward name="success" path="/pages/departmentToMqSchedulerSheetList.jsp"/>
+		</action>
+		<action path="/mqSchedulerSheetDialog" type="com.vtb.security.actions.MqSchedulerSheetDialogAction" name="MqSchedulerSheetDialogForm"  scope="request" input="/departmentToMqSchedulerSheetList.do">
+			<forward name="success" path="/pages/mqSchedulerSheetForm.jsp"/>
+		</action>
+		<action path="/mqSchedulerSheetProcess" type="com.vtb.security.actions.MqSchedulerSheetProcessAction" name="MqSchedulerSheetDialogForm" scope="request" input="/pages/mqSchedulerSheetForm.jsp">
+			<forward name="success" path="/departmentToMqSchedulerSheetList.do"/>
+			<forward name="error" path="/pages/departmentToMqSchedulerSheetList.jsp"/>
+		</action>
+		
+		
+		<action path="/opportunityTypeList" type="com.vtb.dictionary.actions.OpportunityTypeListAction" name="OpportunityTypeListForm" scope="session">
+			<forward name="success" path="/pages/opportunityTypeList.jsp"/>
+		</action>
+		<action path="/opportunityTypeDialog" type="com.vtb.dictionary.actions.OpportunityTypeDialogAction" name="OpportunityTypeDialogForm"  scope="request" input="/opportunityTypeList.do">
+			<forward name="success" path="/pages/opportunityTypeForm.jsp"/>
+		</action>
+		<action path="/opportunityTypeProcess" type="com.vtb.dictionary.actions.OpportunityTypeProcessAction" name="OpportunityTypeDialogForm" scope="request" input="/pages/opportunityTypeForm.jsp">
+			<forward name="success" path="/opportunityTypeList.do"/>
+		</action>
+		
+		<action path="/industryList" type="com.vtb.dictionary.actions.IndustryListAction" name="IndustryListForm" scope="session">
+			<forward name="success" path="/pages/industryList.jsp"/>
+		</action>
+		<action path="/industryDialog" type="com.vtb.dictionary.actions.IndustryDialogAction" name="IndustryDialogForm"  scope="request" input="/industryList.do">
+			<forward name="success" path="/pages/industryForm.jsp"/>
+		</action>
+		<action path="/industryProcess" type="com.vtb.dictionary.actions.IndustryProcessAction" name="IndustryDialogForm" scope="request" input="/pages/industryForm.jsp">
+			<forward name="success" path="/industryList.do"/>
+		</action>
+		
+		<action path="/regionList" type="com.vtb.dictionary.actions.RegionListAction" name="RegionListForm" scope="session">
+			<forward name="success" path="/pages/regionList.jsp"/>
+		</action>
+		<action path="/regionDialog" type="com.vtb.dictionary.actions.RegionDialogAction" name="RegionDialogForm"  scope="request" input="/regionList.do">
+			<forward name="success" path="/pages/regionForm.jsp"/>
+		</action>
+		<action path="/regionProcess" type="com.vtb.dictionary.actions.RegionProcessAction" name="RegionDialogForm" scope="request" input="/pages/regionForm.jsp">
+			<forward name="success" path="/regionList.do"/>
+		</action>
+		
+		<action path="/patternPaidPercentTypeList" type="com.vtb.dictionary.actions.PatternPaidPercentTypeListAction" name="PatternPaidPercentTypeListForm" scope="session">
+			<forward name="success" path="/pages/patternPaidPercentTypeList.jsp"/>
+		</action>
+		<action path="/patternPaidPercentTypeDialog" type="com.vtb.dictionary.actions.PatternPaidPercentTypeDialogAction" name="PatternPaidPercentTypeDialogForm"  scope="request" input="/patternPaidPercentTypeList.do">
+			<forward name="success" path="/pages/patternPaidPercentTypeForm.jsp"/>
+		</action>
+		<action path="/patternPaidPercentTypeProcess" type="com.vtb.dictionary.actions.PatternPaidPercentTypeProcessAction" name="PatternPaidPercentTypeDialogForm" scope="request" input="/pages/patternPaidPercentTypeForm.jsp">
+			<forward name="success" path="/patternPaidPercentTypeList.do"/>
+		</action>
+		
+		<action path="/baseRateList" type="com.vtb.dictionary.actions.BaseRateListAction" name="BaseRateListForm" scope="session">
+			<forward name="success" path="/pages/baseRateList.jsp"/>
+		</action>
+		<action path="/baseRateDialog" type="com.vtb.dictionary.actions.BaseRateDialogAction" name="BaseRateDialogForm"  scope="request" input="/baseRateList.do">
+			<forward name="success" path="/pages/baseRateForm.jsp"/>
+		</action>
+		<action path="/baseRateProcess" type="com.vtb.dictionary.actions.BaseRateProcessAction" name="BaseRateDialogForm" scope="request" input="/pages/baseRateForm.jsp">
+			<forward name="success" path="/baseRateList.do"/>
+		</action>
+
+		<action path="/punitiveMeasureList" type="com.vtb.dictionary.actions.PunitiveMeasureListAction" name="PunitiveMeasureListForm" scope="session">
+			<forward name="success" path="/pages/punitiveMeasureList.jsp"/>
+		</action>
+		<action path="/punitiveMeasureDialog" type="com.vtb.dictionary.actions.PunitiveMeasureDialogAction" name="PunitiveMeasureDialogForm"  scope="request" input="/punitiveMeasureList.do">
+			<forward name="success" path="/pages/punitiveMeasureForm.jsp"/>
+		</action>
+		<action path="/punitiveMeasureProcess" type="com.vtb.dictionary.actions.PunitiveMeasureProcessAction" name="PunitiveMeasureDialogForm" scope="request" input="/pages/punitiveMeasureForm.jsp">
+			<forward name="success" path="/punitiveMeasureList.do"/>
+		</action>
+
+
+		<action path="/authorizedBodyList" type="com.vtb.dictionary.actions.AuthorizedBodyListAction" name="AuthorizedBodyListForm" scope="session">
+			<forward name="success" path="/pages/authorizedBodyList.jsp"/>
+		</action>
+		<action path="/authorizedBodyDialog" type="com.vtb.dictionary.actions.AuthorizedBodyDialogAction" name="AuthorizedBodyDialogForm"  scope="request" input="/authorizedBodyList.do">
+			<forward name="success" path="/pages/authorizedBodyForm.jsp"/>
+		</action>
+		<action path="/authorizedBodyProcess" type="com.vtb.dictionary.actions.AuthorizedBodyProcessAction" name="AuthorizedBodyDialogForm" scope="request" input="/pages/authorizedBodyForm.jsp">
+			<forward name="success" path="/authorizedBodyList.do"/>
+		</action>
+
+		<action path="/organizationList" type="com.vtb.security.actions.OrganizationListAction" name="OrganizationListForm" scope="session">
+			<forward name="success" path="/pages/organizationList.jsp"/>
+		</action>
+		<action path="/organizationDialog" type="com.vtb.security.actions.OrganizationDialogAction" name="OrganizationDialogForm"  scope="request" input="/organizationList.do">
+			<forward name="success" path="/pages/organizationForm.jsp"/>
+		</action>
+		<action path="/organizationProcess" type="com.vtb.security.actions.OrganizationProcessAction" name="OrganizationDialogForm" scope="request" input="/pages/organizationForm.jsp">
+			<forward name="success" path="/organizationList.do"/>
+		</action>
+		<action path="/organizationLookupList" type="com.vtb.security.actions.OrganizationLookupListAction" name="OrganizationLookupListForm" scope="session">
+			<forward name="success" path="/pages/organizationLookupList.jsp"/>
+		</action>
+		<action path="/organizationInfo" type="com.vtb.security.actions.OrganizationInfoAction" name="OrganizationInfoForm"  scope="request" input="/organizationList.do">
+			<forward name="success" path="/pages/organizationInfo.jsp"/>
+		</action>
+		
+		<action path="/organizationCrmInfo" type="com.vtb.security.actions.OrganizationCrmInfoAction" name="OrganizationCrmInfoForm"  scope="request" input="/organizationList.do">
+			<forward name="success" path="/pages/organizationCrmInfo.jsp"/>
+		</action>
+		<action path="/organizationCrmDialog" type="com.vtb.security.actions.OrganizationCrmDialogAction" name="OrganizationCrmDialogForm"  scope="request" input="/organizationList.do">
+			<forward name="success" path="/pages/organizationCrmForm.jsp"/>
+		</action>
+		<action path="/organizationCrmProcess" type="com.vtb.security.actions.OrganizationCrmProcessAction" name="OrganizationCrmDialogForm" scope="request" input="/pages/organizationCrmForm.jsp">
+			<forward name="success" path="/organizationList.do"/>
+		</action>						
+		
+		<action path="/organizationToGroupList" type="com.vtb.security.actions.OrganizationToGroupListAction" name="OrganizationToGroupListForm" scope="request">
+			<forward name="success" path="/pages/organizationToGroupList.jsp"/>
+		</action>
+		<action path="/organizationCrmToGroupList" type="com.vtb.security.actions.OrganizationCrmToGroupListAction" name="OrganizationCrmToGroupListForm" scope="request">
+			<forward name="success" path="/pages/organizationCrmToGroupList.jsp"/>
+		</action>		
+		<action path="/organizationToOkvedList" type="com.vtb.security.actions.OrganizationToOkvedListAction" name="OrganizationToOkvedListForm" scope="request">
+			<forward name="success" path="/pages/organizationToOkvedList.jsp"/>
+		</action>				
+		
+		<action path="/organizationToAddressList" type="com.vtb.security.actions.OrganizationToAddressListAction" name="OrganizationToAddressListForm" scope="request">
+			<forward name="success" path="/pages/organizationToAddressList.jsp"/>
+		</action>
+		<action path="/organizationToAddressDialog" type="com.vtb.security.actions.OrganizationToAddressDialogAction" name="OrganizationToAddressDialogForm"  scope="request" input="/organizationToAddressList.do">
+			<forward name="success" path="/pages/organizationToAddressForm.jsp"/>
+		</action>
+		<action path="/organizationToAddressProcess" type="com.vtb.security.actions.OrganizationToAddressProcessAction" name="OrganizationToAddressDialogForm" scope="request" input="/pages/organizationToAddressForm.jsp">
+			<forward name="success" path="/organizationToAddressList.do"/>
+			<forward name="error" path="/pages/organizationToAddressForm.jsp"/>
+		</action>				
+		
+		<action path="/organizationGroupList" type="com.vtb.security.actions.OrganizationGroupListAction" name="OrganizationGroupListForm" scope="session">
+			<forward name="success" path="/pages/organizationGroupList.jsp"/>
+		</action>
+		<action path="/organizationGroupDialog" type="com.vtb.security.actions.OrganizationGroupDialogAction" name="OrganizationGroupDialogForm"  scope="request" input="/organizationGroupList.do">
+			<forward name="success" path="/pages/organizationGroupForm.jsp"/>
+		</action>
+		<action path="/organizationGroupProcess" type="com.vtb.security.actions.OrganizationGroupProcessAction" name="OrganizationGroupDialogForm" scope="request" input="/pages/organizationGroupForm.jsp">
+			<forward name="success" path="/organizationGroupList.do"/>
+			<forward name="error" path="/pages/organizationGroupForm.jsp"/>
+		</action>
+		<action path="/organizationGroupLookupList" type="com.vtb.security.actions.OrganizationGroupLookupListAction" name="OrganizationGroupLookupListForm" scope="session">
+			<forward name="success" path="/pages/organizationGroupLookupList.jsp"/>
+		</action>
+		<action path="/organizationGroupCrmInfo" type="com.vtb.security.actions.OrganizationGroupCrmInfoAction" name="OrganizationGroupCrmInfoForm"  scope="request" input="/organizationGroupList.do">
+			<forward name="success" path="/pages/organizationGroupCrmInfo.jsp"/>
+		</action>								
+
+		<action path="/documentGroupList" type="com.vtb.dictionary.actions.DocumentGroupListAction" name="DocumentGroupListForm" scope="session">
+			<forward name="success" path="/pages/documentGroupList.jsp"/>
+		</action>
+		<action path="/documentGroupDialog" type="com.vtb.dictionary.actions.DocumentGroupDialogAction" name="DocumentGroupDialogForm"  scope="request" input="/documentGroupList.do">
+			<forward name="success" path="/pages/documentGroupForm.jsp"/>
+		</action>
+		<action path="/documentGroupProcess" type="com.vtb.dictionary.actions.DocumentGroupProcessAction" name="DocumentGroupDialogForm" scope="request" input="/pages/documentGroupForm.jsp">
+			<forward name="success" path="/documentGroupList.do"/>
+		</action>
+		
+		<action path="/groupToOrganizationList" type="com.vtb.security.actions.GroupToOrganizationListAction" name="GroupToOrganizationListForm" scope="request">
+			<forward name="success" path="/pages/groupToOrganizationList.jsp"/>
+		</action>
+		<action path="/groupCrmToOrganizationList" type="com.vtb.security.actions.GroupCrmToOrganizationListAction" name="GroupCrmToOrganizationListForm" scope="request">
+			<forward name="success" path="/pages/groupCrmToOrganizationList.jsp"/>
+		</action>				
+		
+		<action path="/ownershipFormTypeList" type="com.vtb.dictionary.actions.OwnershipFormTypeListAction" name="OwnershipFormTypeListForm" scope="session">
+			<forward name="success" path="/pages/ownershipFormTypeList.jsp"/>
+		</action>
+		<action path="/ownershipFormTypeDialog" type="com.vtb.dictionary.actions.OwnershipFormTypeDialogAction" name="OwnershipFormTypeDialogForm"  scope="request" input="/ownershipFormTypeList.do">
+			<forward name="success" path="/pages/ownershipFormTypeForm.jsp"/>
+		</action>
+		<action path="/ownershipFormTypeProcess" type="com.vtb.dictionary.actions.OwnershipFormTypeProcessAction" name="OwnershipFormTypeDialogForm" scope="request" input="/pages/ownershipFormTypeForm.jsp">
+			<forward name="success" path="/ownershipFormTypeList.do"/>
+			<forward name="error" path="/pages/ownershipFormTypeForm.jsp"/>
+		</action>
+		
+		<action path="/organizationToGovernList" type="com.vtb.security.actions.OrganizationToGovernListAction" name="OrganizationToGovernListForm" scope="request">
+			<forward name="success" path="/pages/organizationToGovernList.jsp"/>
+		</action>
+		<action path="/organizationToGovernDialog" type="com.vtb.security.actions.OrganizationToGovernDialogAction" name="OrganizationToGovernDialogForm"  scope="request" input="/organizationToGovernList.do">
+			<forward name="success" path="/pages/organizationToGovernForm.jsp"/>
+		</action>
+		<action path="/organizationToGovernProcess" type="com.vtb.security.actions.OrganizationToGovernProcessAction" name="OrganizationToGovernDialogForm" scope="request" input="/pages/organizationToGovernForm.jsp">
+			<forward name="success" path="/organizationToGovernList.do"/>
+			<forward name="error" path="/pages/organizationToGovernForm.jsp"/>
+		</action>
+		
+		<action path="/organizationToShareholderList" type="com.vtb.security.actions.OrganizationToShareholderListAction" name="OrganizationToShareholderListForm" scope="request">
+			<forward name="success" path="/pages/organizationToShareholderList.jsp"/>
+		</action>
+		<action path="/organizationToShareholderDialog" type="com.vtb.security.actions.OrganizationToShareholderDialogAction" name="OrganizationToShareholderDialogForm"  scope="request" input="/organizationToShareholderList.do">
+			<forward name="success" path="/pages/organizationToShareholderForm.jsp"/>
+		</action>
+		<action path="/organizationToShareholderProcess" type="com.vtb.security.actions.OrganizationToShareholderProcessAction" name="OrganizationToShareholderDialogForm" scope="request" input="/pages/organizationToShareholderForm.jsp">
+			<forward name="success" path="/organizationToShareholderList.do"/>
+			<forward name="error" path="/pages/organizationToShareholderForm.jsp"/>
+		</action>
+		
+		<action path="/stopFactorList" type="com.vtb.dictionary.actions.StopFactorListAction" name="StopFactorListForm" scope="session">
+			<forward name="success" path="/pages/stopFactorList.jsp"/>
+		</action>
+		<action path="/stopFactorDialog" type="com.vtb.dictionary.actions.StopFactorDialogAction" name="StopFactorDialogForm"  scope="request" input="/stopFactorList.do">
+			<forward name="success" path="/pages/stopFactorForm.jsp"/>
+		</action>
+		<action path="/stopFactorProcess" type="com.vtb.dictionary.actions.StopFactorProcessAction" name="StopFactorDialogForm" scope="request" input="/pages/stopFactorForm.jsp">
+			<forward name="success" path="/stopFactorList.do"/>
+		</action>
+		
+		<action path="/organizationToManagerList" type="com.vtb.security.actions.OrganizationToManagerListAction" name="OrganizationToManagerListForm" scope="request">
+			<forward name="success" path="/pages/organizationToManagerList.jsp"/>
+		</action>
+		<action path="/organizationToManagerDialog" type="com.vtb.security.actions.OrganizationToManagerDialogAction" name="OrganizationToManagerDialogForm"  scope="request" input="/organizationToManagerList.do">
+			<forward name="success" path="/pages/organizationToManagerForm.jsp"/>
+		</action>
+		<action path="/organizationToManagerProcess" type="com.vtb.security.actions.OrganizationToManagerProcessAction" name="OrganizationToManagerDialogForm" scope="request" input="/pages/organizationToManagerForm.jsp">
+			<forward name="success" path="/organizationToManagerList.do"/>
+			<forward name="error" path="/pages/organizationToManagerForm.jsp"/>
+		</action>
+		
+		<action path="/okvedList" type="com.vtb.security.actions.OkvedListAction" name="OkvedListForm" scope="session">
+			<forward name="success" path="/pages/okvedList.jsp"/>
+		</action>
+		<action path="/okvedDialog" type="com.vtb.security.actions.OkvedDialogAction" name="OkvedDialogForm"  scope="request" input="/okvedList.do">
+			<forward name="success" path="/pages/okvedForm.jsp"/>
+		</action>
+		<action path="/okvedProcess" type="com.vtb.security.actions.OkvedProcessAction" name="OkvedDialogForm" scope="request" input="/pages/okvedForm.jsp">
+			<forward name="success" path="/okvedList.do"/>
+			<forward name="error" path="/pages/okvedForm.jsp"/>
+		</action>												
+		<action path="/okvedLookupList" type="com.vtb.security.actions.OkvedLookupListAction" name="OkvedLookupListForm" scope="session">
+			<forward name="success" path="/pages/okvedLookupList.jsp"/>
+		</action>
+		<action path="/okvedHierarchyList" type="com.vtb.security.actions.OkvedHierarchyListAction" name="OkvedHierarchyListForm" scope="request">
+			<forward name="success" path="/pages/okvedHierarchyList.jsp"/>
+		</action>		
+								
+	</action-mappings>
+
+	<!-- Ресурсы сообщений -->
+	<message-resources
+		parameter="dictionaryApp.resources.ApplicationResources" />
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+		<set-property property="definitions-config"
+			value="/WEB-INF/tiles-defs.xml" />
+		<set-property property="definitions-parser-validate"
+			value="true" />
+		<set-property property="moduleAware" value="true" />
+	</plug-in>
+
+</struts-config>

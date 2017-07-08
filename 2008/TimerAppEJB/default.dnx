@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<?com.ibm.xtools.emf.core.signature <signature id="com.ibm.xtools.mmi.ui.signatures.diagram" version="7.0.0"><feature description="" name="Rational Modeling Platform (com.ibm.xtools.rmp)" url="" version="7.0.0"/></signature>?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.0/notation" xmlns:uml="http://www.eclipse.org/uml2/2.0.0/UML" xmlns:umlnotation="http://www.ibm.com/xtools/1.5.2/Umlnotation" xmi:id="_KHLukMp4Ed2jlqjIRLrPMg" type="Class" name="default.dnx">
+  <children xmi:id="_MZ9pgMp4Ed2jlqjIRLrPMg">
+    <children xmi:id="_MaQkcMp4Ed2jlqjIRLrPMg" type="ImageCompartment">
+      <layoutConstraint xmi:type="notation:Size" xmi:id="_MaQkccp4Ed2jlqjIRLrPMg" width="1320" height="1320"/>
+    </children>
+    <children xmi:id="_MaQkcsp4Ed2jlqjIRLrPMg" type="Stereotype"/>
+    <children xmi:id="_MaQkc8p4Ed2jlqjIRLrPMg" type="Kind"/>
+    <children xmi:id="_MaQkdMp4Ed2jlqjIRLrPMg" type="Name"/>
+    <children xmi:id="_MaQkdcp4Ed2jlqjIRLrPMg" type="Parent"/>
+    <children xmi:id="_MaQkdsp4Ed2jlqjIRLrPMg" type="AttributeCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MaQkd8p4Ed2jlqjIRLrPMg"/>
+    </children>
+    <children xmi:id="_MaQkeMp4Ed2jlqjIRLrPMg" visible="false" type="OperationCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MaQkecp4Ed2jlqjIRLrPMg"/>
+    </children>
+    <children xmi:id="_MaQkesp4Ed2jlqjIRLrPMg" visible="false" type="RealizationListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MaQke8p4Ed2jlqjIRLrPMg"/>
+    </children>
+    <children xmi:id="_MaQkfMp4Ed2jlqjIRLrPMg" visible="false" type="RequiredInterfaceListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MaQkfcp4Ed2jlqjIRLrPMg" filtering="Automatic" filteringKeys="Other interface"/>
+    </children>
+    <children xmi:id="_MaQkfsp4Ed2jlqjIRLrPMg" type="ProvidedInterfaceListCompartment">
+      <styles xmi:type="umlnotation:UMLListCompartmentStyle" xmi:id="_MaQkf8p4Ed2jlqjIRLrPMg" filtering="Automatic" filteringKeys="Other interface"/>
+    </children>
+    <styles xmi:type="umlnotation:UMLComponentStyle" xmi:id="_MZ9pgcp4Ed2jlqjIRLrPMg" showStereotype="Label"/>
+    <element xmi:type="uml:Component" href="mmi:///#sessionBean%5EURI=platform:/resource/TimerAppEJB/ejbModule/META-INF/ejb-jar.xml%23TimerEJB%5Bproject%5Eid=TimerAppEJB%5D$uml.Component"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MZ9pgsp4Ed2jlqjIRLrPMg" x="6059" y="7276"/>
+  </children>
+  <styles xmi:type="umlnotation:UMLDiagramStyle" xmi:id="_KHLukcp4Ed2jlqjIRLrPMg"/>
+  <element xsi:nil="true"/>
+</notation:Diagram>

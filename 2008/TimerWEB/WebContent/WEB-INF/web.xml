@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>TimerWEB</display-name>
+	<context-param>
+		<description>Timer для загрузки из системы CRM в систему СПО</description>
+		<param-name>timerName</param-name>
+		<param-value>LoaderFromCRM</param-value>
+	</context-param>
+	<context-param>
+		<description>период для таймера "timerName" в милисекундах</description>
+		<param-name>timerPeriod</param-name>
+		<param-value>60000</param-value>
+	</context-param>
+	<listener>
+		<description>Cycle Event Example</description>
+		<display-name>TimerLifeCycleEvent</display-name>
+		<listener-class>
+			com.timer.web.TimerLifeCycleEvent
+		</listener-class>
+	</listener>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<ejb-ref id="EjbRef_1229340679402">
+		<description></description>
+		<ejb-ref-name>ejb/TimerEJB</ejb-ref-name>
+		<ejb-ref-type>Session</ejb-ref-type>
+		<home>com.timer.ejb.TimerEJBHome</home>
+		<remote>com.timer.ejb.TimerEJB</remote>
+		<ejb-link>TimerAppEJB.jar#TimerEJB</ejb-link>
+	</ejb-ref>
+	<resource-ref id="ResourceRef_1230130193011">
+		<description>
+		</description>
+		<res-ref-name>jdbc/CRM</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Application</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+</web-app>

@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/flexWorkflow/!svn/ver/3621/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions
+END
+OkvedHierarchyListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/flexWorkflow/!svn/ver/3223/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OkvedHierarchyListAction.java
+END
+OkvedListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/flexWorkflow/!svn/ver/3341/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OkvedListAction.java
+END
+OrganizationCrmProcessAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/flexWorkflow/!svn/ver/3405/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationCrmProcessAction.java
+END
+OrganizationGroupLookupListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/flexWorkflow/!svn/ver/3561/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationGroupLookupListAction.java
+END
+SecurityAppAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/flexWorkflow/!svn/ver/2813/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/SecurityAppAction.java
+END
+OrganizationToGovernDialogAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/flexWorkflow/!svn/ver/2881/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToGovernDialogAction.java
+END
+OrganizationToShareholderDialogAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/flexWorkflow/!svn/ver/2919/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToShareholderDialogAction.java
+END
+OrganizationGroupListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/flexWorkflow/!svn/ver/3035/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationGroupListAction.java
+END
+OrganizationToGroupListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/flexWorkflow/!svn/ver/3575/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToGroupListAction.java
+END
+GroupToOrganizationListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/flexWorkflow/!svn/ver/3462/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/GroupToOrganizationListAction.java
+END
+OrganizationInfoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/flexWorkflow/!svn/ver/3582/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationInfoAction.java
+END
+OrganizationGroupProcessAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/flexWorkflow/!svn/ver/2554/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationGroupProcessAction.java
+END
+GroupCrmToOrganizationListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/flexWorkflow/!svn/ver/3515/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/GroupCrmToOrganizationListAction.java
+END
+OrganizationCrmToGroupListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/flexWorkflow/!svn/ver/3602/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationCrmToGroupListAction.java
+END
+OrganizationCrmInfoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/flexWorkflow/!svn/ver/3621/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationCrmInfoAction.java
+END
+OrganizationToManagerDialogAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/flexWorkflow/!svn/ver/3105/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToManagerDialogAction.java
+END
+OrganizationToGovernProcessAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/flexWorkflow/!svn/ver/2884/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToGovernProcessAction.java
+END
+OrganizationToShareholderProcessAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/flexWorkflow/!svn/ver/2912/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToShareholderProcessAction.java
+END
+OkvedDialogAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/flexWorkflow/!svn/ver/3201/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OkvedDialogAction.java
+END
+OrganizationLookupListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/flexWorkflow/!svn/ver/3440/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationLookupListAction.java
+END
+OrganizationToOkvedListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/flexWorkflow/!svn/ver/3668/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToOkvedListAction.java
+END
+OrganizationGroupCrmInfoAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/flexWorkflow/!svn/ver/3555/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationGroupCrmInfoAction.java
+END
+OrganizationListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/flexWorkflow/!svn/ver/3008/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationListAction.java
+END
+OrganizationToManagerProcessAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/flexWorkflow/!svn/ver/3054/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToManagerProcessAction.java
+END
+OrganizationGroupDialogAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/flexWorkflow/!svn/ver/2540/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationGroupDialogAction.java
+END
+OkvedProcessAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/flexWorkflow/!svn/ver/3159/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OkvedProcessAction.java
+END
+OrganizationToAddressListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/flexWorkflow/!svn/ver/2783/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToAddressListAction.java
+END
+OperatorToRoleListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/flexWorkflow/!svn/ver/2814/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OperatorToRoleListAction.java
+END
+OrganizationToAddressProcessAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/flexWorkflow/!svn/ver/2783/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToAddressProcessAction.java
+END
+OrganizationToShareholderListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/flexWorkflow/!svn/ver/2922/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToShareholderListAction.java
+END
+OrganizationToGovernListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/flexWorkflow/!svn/ver/2895/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToGovernListAction.java
+END
+OrganizationCrmDialogAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/flexWorkflow/!svn/ver/3384/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationCrmDialogAction.java
+END
+OrganizationToAddressDialogAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/flexWorkflow/!svn/ver/2782/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToAddressDialogAction.java
+END
+OrganizationToManagerListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/flexWorkflow/!svn/ver/3117/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OrganizationToManagerListAction.java
+END
+OkvedLookupListAction.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/flexWorkflow/!svn/ver/3662/MD/DictionaryApp/trunk/JavaSource/com/vtb/security/actions/OkvedLookupListAction.java
+END

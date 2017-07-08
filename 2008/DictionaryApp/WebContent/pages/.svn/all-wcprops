@@ -1,0 +1,317 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/flexWorkflow/!svn/ver/3622/MD/DictionaryApp/trunk/WebContent/pages
+END
+organizationToManagerForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/flexWorkflow/!svn/ver/3106/MD/DictionaryApp/trunk/WebContent/pages/organizationToManagerForm.jsp
+END
+documentGroupList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/flexWorkflow/!svn/ver/2691/MD/DictionaryApp/trunk/WebContent/pages/documentGroupList.jsp
+END
+documentsTypeForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/flexWorkflow/!svn/ver/3363/MD/DictionaryApp/trunk/WebContent/pages/documentsTypeForm.jsp
+END
+patternPaidPercentTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/flexWorkflow/!svn/ver/2701/MD/DictionaryApp/trunk/WebContent/pages/patternPaidPercentTypeList.jsp
+END
+organizationLookupList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/flexWorkflow/!svn/ver/3439/MD/DictionaryApp/trunk/WebContent/pages/organizationLookupList.jsp
+END
+okvedForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/flexWorkflow/!svn/ver/3314/MD/DictionaryApp/trunk/WebContent/pages/okvedForm.jsp
+END
+organizationToOkvedList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/flexWorkflow/!svn/ver/3677/MD/DictionaryApp/trunk/WebContent/pages/organizationToOkvedList.jsp
+END
+organizationList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/flexWorkflow/!svn/ver/3609/MD/DictionaryApp/trunk/WebContent/pages/organizationList.jsp
+END
+organizationToAddressForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/flexWorkflow/!svn/ver/3078/MD/DictionaryApp/trunk/WebContent/pages/organizationToAddressForm.jsp
+END
+okvedHierarchyList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/flexWorkflow/!svn/ver/3316/MD/DictionaryApp/trunk/WebContent/pages/okvedHierarchyList.jsp
+END
+departmentToOperatorForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/2712/MD/DictionaryApp/trunk/WebContent/pages/departmentToOperatorForm.jsp
+END
+organizationGroupLookupList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/flexWorkflow/!svn/ver/3563/MD/DictionaryApp/trunk/WebContent/pages/organizationGroupLookupList.jsp
+END
+stopFactorForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/flexWorkflow/!svn/ver/2972/MD/DictionaryApp/trunk/WebContent/pages/stopFactorForm.jsp
+END
+limitTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/flexWorkflow/!svn/ver/2693/MD/DictionaryApp/trunk/WebContent/pages/limitTypeList.jsp
+END
+operatorToRoleList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/flexWorkflow/!svn/ver/2807/MD/DictionaryApp/trunk/WebContent/pages/operatorToRoleList.jsp
+END
+contractorTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/flexWorkflow/!svn/ver/2690/MD/DictionaryApp/trunk/WebContent/pages/contractorTypeList.jsp
+END
+industryList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/flexWorkflow/!svn/ver/2697/MD/DictionaryApp/trunk/WebContent/pages/industryList.jsp
+END
+organizationGroupList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/flexWorkflow/!svn/ver/3559/MD/DictionaryApp/trunk/WebContent/pages/organizationGroupList.jsp
+END
+commissionTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/flexWorkflow/!svn/ver/2678/MD/DictionaryApp/trunk/WebContent/pages/commissionTypeList.jsp
+END
+regionList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/flexWorkflow/!svn/ver/2698/MD/DictionaryApp/trunk/WebContent/pages/regionList.jsp
+END
+punitiveMeasureList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/flexWorkflow/!svn/ver/2704/MD/DictionaryApp/trunk/WebContent/pages/punitiveMeasureList.jsp
+END
+baseRateList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/flexWorkflow/!svn/ver/2702/MD/DictionaryApp/trunk/WebContent/pages/baseRateList.jsp
+END
+targetTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/flexWorkflow/!svn/ver/2699/MD/DictionaryApp/trunk/WebContent/pages/targetTypeList.jsp
+END
+organizationToGovernList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/2894/MD/DictionaryApp/trunk/WebContent/pages/organizationToGovernList.jsp
+END
+organizationToShareholderList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/flexWorkflow/!svn/ver/2925/MD/DictionaryApp/trunk/WebContent/pages/organizationToShareholderList.jsp
+END
+organizationForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/flexWorkflow/!svn/ver/3386/MD/DictionaryApp/trunk/WebContent/pages/organizationForm.jsp
+END
+authorizedBodyList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/flexWorkflow/!svn/ver/2706/MD/DictionaryApp/trunk/WebContent/pages/authorizedBodyList.jsp
+END
+departmentToMqSchedulerSheetList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/flexWorkflow/!svn/ver/2713/MD/DictionaryApp/trunk/WebContent/pages/departmentToMqSchedulerSheetList.jsp
+END
+organizationCrmForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/flexWorkflow/!svn/ver/3392/MD/DictionaryApp/trunk/WebContent/pages/organizationCrmForm.jsp
+END
+okvedLookupList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/flexWorkflow/!svn/ver/3664/MD/DictionaryApp/trunk/WebContent/pages/okvedLookupList.jsp
+END
+organizationToManagerList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/flexWorkflow/!svn/ver/3114/MD/DictionaryApp/trunk/WebContent/pages/organizationToManagerList.jsp
+END
+documentsTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/flexWorkflow/!svn/ver/2692/MD/DictionaryApp/trunk/WebContent/pages/documentsTypeList.jsp
+END
+departmentList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/flexWorkflow/!svn/ver/2709/MD/DictionaryApp/trunk/WebContent/pages/departmentList.jsp
+END
+organizationGroupCrmInfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/3556/MD/DictionaryApp/trunk/WebContent/pages/organizationGroupCrmInfo.jsp
+END
+ownershipFormTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/flexWorkflow/!svn/ver/2707/MD/DictionaryApp/trunk/WebContent/pages/ownershipFormTypeList.jsp
+END
+okvedList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/flexWorkflow/!svn/ver/3345/MD/DictionaryApp/trunk/WebContent/pages/okvedList.jsp
+END
+industryForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/flexWorkflow/!svn/ver/2481/MD/DictionaryApp/trunk/WebContent/pages/industryForm.jsp
+END
+organizationGroupForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/flexWorkflow/!svn/ver/2655/MD/DictionaryApp/trunk/WebContent/pages/organizationGroupForm.jsp
+END
+organizationToAddressList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/flexWorkflow/!svn/ver/3259/MD/DictionaryApp/trunk/WebContent/pages/organizationToAddressList.jsp
+END
+opportunityTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/flexWorkflow/!svn/ver/2695/MD/DictionaryApp/trunk/WebContent/pages/opportunityTypeList.jsp
+END
+organizationToGovernForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/3076/MD/DictionaryApp/trunk/WebContent/pages/organizationToGovernForm.jsp
+END
+organizationToShareholderForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/flexWorkflow/!svn/ver/3077/MD/DictionaryApp/trunk/WebContent/pages/organizationToShareholderForm.jsp
+END
+departmentToOperatorList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/2712/MD/DictionaryApp/trunk/WebContent/pages/departmentToOperatorList.jsp
+END
+groupToOrganizationList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/flexWorkflow/!svn/ver/3476/MD/DictionaryApp/trunk/WebContent/pages/groupToOrganizationList.jsp
+END
+organizationInfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/flexWorkflow/!svn/ver/3581/MD/DictionaryApp/trunk/WebContent/pages/organizationInfo.jsp
+END
+organizationToGroupList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/flexWorkflow/!svn/ver/3577/MD/DictionaryApp/trunk/WebContent/pages/organizationToGroupList.jsp
+END
+stopFactorList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/flexWorkflow/!svn/ver/2972/MD/DictionaryApp/trunk/WebContent/pages/stopFactorList.jsp
+END
+ratingTypeList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/flexWorkflow/!svn/ver/2673/MD/DictionaryApp/trunk/WebContent/pages/ratingTypeList.jsp
+END
+organizationCrmInfo.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/flexWorkflow/!svn/ver/3622/MD/DictionaryApp/trunk/WebContent/pages/organizationCrmInfo.jsp
+END
+groupCrmToOrganizationList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/flexWorkflow/!svn/ver/3522/MD/DictionaryApp/trunk/WebContent/pages/groupCrmToOrganizationList.jsp
+END
+organizationCrmToGroupList.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/flexWorkflow/!svn/ver/3619/MD/DictionaryApp/trunk/WebContent/pages/organizationCrmToGroupList.jsp
+END
+spoSettingForm.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/flexWorkflow/!svn/ver/3362/MD/DictionaryApp/trunk/WebContent/pages/spoSettingForm.jsp
+END

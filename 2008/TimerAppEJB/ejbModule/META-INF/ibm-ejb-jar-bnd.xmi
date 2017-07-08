@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejbbnd:EJBJarBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ejb="ejb.xmi" xmlns:ejbbnd="ejbbnd.xmi" xmi:id="EJBJarBinding_1229325342402">
+  <ejbJar href="META-INF/ejb-jar.xml#ejb-jar_ID"/>
+  <ejbBindings xmi:id="EnterpriseBeanBinding_1229325342402" jndiName="ejb/com/timer/ejb/TimerEJBHome">
+    <enterpriseBean xmi:type="ejb:Session" href="META-INF/ejb-jar.xml#TimerEJB"/>
+    <resRefBindings xmi:id="ResourceRefBinding_1230132374448" jndiName="jdbc/CRM">
+      <bindingResourceRef href="META-INF/ejb-jar.xml#ResourceRef_1230132374448"/>
+    </resRefBindings>
+  </ejbBindings>
+  <defaultCMPConnectionFactory xmi:id="CMPConnectionFactoryBinding_1234175795087" jndiName="jdbc/VTB" resAuth="Per_Connection_Factory"/>
+</ejbbnd:EJBJarBinding>

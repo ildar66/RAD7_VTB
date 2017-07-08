@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/flexWorkflow/!svn/ver/3616/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc
+END
+SpoOpportunityMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/flexWorkflow/!svn/ver/3322/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/SpoOpportunityMapper.java
+END
+SpoOpportunityProductMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/flexWorkflow/!svn/ver/3485/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/SpoOpportunityProductMapper.java
+END
+ShareholderMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/flexWorkflow/!svn/ver/2932/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/ShareholderMapper.java
+END
+GovernMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/flexWorkflow/!svn/ver/2889/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/GovernMapper.java
+END
+RoleMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/flexWorkflow/!svn/ver/2817/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/RoleMapper.java
+END
+JDBCMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/flexWorkflow/!svn/ver/2563/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/JDBCMapper.java
+END
+JDBCMapperCRM.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/3131/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/JDBCMapperCRM.java
+END
+OrganizationMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/flexWorkflow/!svn/ver/3580/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/OrganizationMapper.java
+END
+SPOMessageMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/flexWorkflow/!svn/ver/2467/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/SPOMessageMapper.java
+END
+SpoAddressMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/flexWorkflow/!svn/ver/3355/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/SpoAddressMapper.java
+END
+OkvedMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/flexWorkflow/!svn/ver/3655/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/OkvedMapper.java
+END
+ManagerMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/3119/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/ManagerMapper.java
+END
+SpoAccountMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/flexWorkflow/!svn/ver/3433/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/SpoAccountMapper.java
+END
+ProcessTypeMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/flexWorkflow/!svn/ver/2803/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/ProcessTypeMapper.java
+END
+IndustryMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/flexWorkflow/!svn/ver/2480/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/IndustryMapper.java
+END
+OrganizationGroupMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/flexWorkflow/!svn/ver/3616/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/OrganizationGroupMapper.java
+END
+OrganizationLinkMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/flexWorkflow/!svn/ver/3674/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/OrganizationLinkMapper.java
+END
+SpoHistoryMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/flexWorkflow/!svn/ver/3322/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/SpoHistoryMapper.java
+END
+StopFactorMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/flexWorkflow/!svn/ver/2949/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/StopFactorMapper.java
+END
+AddressMapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/flexWorkflow/!svn/ver/3102/MD/VTB-AppLogic/trunk/source/com/vtb/mapping/jdbc/AddressMapper.java
+END

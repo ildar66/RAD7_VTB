@@ -1,0 +1,87 @@
+TR.select {
+	 BACKGROUND-COLOR: white; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.selected {
+	 BACKGROUND-COLOR: #FFF799; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.expired {
+	 BACKGROUND-COLOR: #D0FFD0; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.title {
+	BACKGROUND-COLOR: AAD1F6;  FONT-FAMILY: Verdana,Arial; 
+}
+TD.title {
+	padding-left: 3pt; padding-right: 3pt;  font-weight: bold;
+}
+
+TR.normal {
+	BACKGROUND-COLOR: #F7F7F7; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.autodoc {
+	BACKGROUND-COLOR: #DDDDDD; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.gray {
+	BACKGROUND-COLOR: #CCCCCC; FONT-FAMILY: Verdana,Arial;
+}
+
+TR.color2 {
+	 BACKGROUND-COLOR: blue;
+}
+TR.color3 {
+	 BACKGROUND-COLOR: red;
+}
+TR.color4 {
+	 BACKGROUND-COLOR: green;
+}
+TR.include {
+	background-color:#A5F3C6;
+}
+TR.exclude {
+	background-color:#F0F0F0;
+}
+TR.selectedrow {
+	background-color:#FFF0D0;
+}
+A.button {
+	border-width: 2;
+	border-style: solid;
+	border-color: #003366;
+	background-color:#336699;
+	color: white; 
+	padding-left: 4;
+	padding-right: 4;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 2;
+	margin-bottom: 2;
+	text-decoration: none;
+	text-weight: normal;
+	display: inline-block;
+	font-family: Tahoma, Arial;
+	font-size: 8pt;
+}
+TABLE.main {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100%;
+}
+TABLE.print {
+	FONT-FAMILY: Verdana,Arial; FONT-SIZE: 10pt; WIDTH: 100%; border-style: solid; border-color: black; border-width: 3; border-collapse:collapse;
+}
+
+TR.print {
+}
+
+TD.print {
+	border-style: solid; border-color: black; border-width: 1; padding: 5;
+}
+
+
+TR.printable {
+}
+
+TD.printable {
+}

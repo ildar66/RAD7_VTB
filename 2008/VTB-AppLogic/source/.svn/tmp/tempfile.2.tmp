@@ -1,0 +1,25 @@
+# Model implementation -- supported is WEB or EJB
+vtb.model.impl.name=WEB
+#vtb.model.impl.name=EJB
+
+
+# Mapping implementation -- supported is MEMORY, JDBC, or EJB
+#vtb.persistence.name=EJB
+#vtb.persistence.name=MEMORY
+vtb.persistence.name=JDBC
+
+# Mapping reserve implementation -- supported is MEMORY, JDBC, or EJB
+vtb.persistence.reserve.name=EJB
+#vtb.persistence.reserve.name=MEMORY
+#vtb.persistence.reserve.name=JDBC
+
+vtb.datasource.name=jdbc/VTBLOANS
+
+vtb.datasource.schema=VTB_ADMIN
+<<<<<<< .mine
+#vtb.datasource.schema=SYSTEM
+
+vtb.datasource.crm.name=jdbc/CRM
+=======
+#vtb.datasource.schema=MDSPO
+>>>>>>> .r2349

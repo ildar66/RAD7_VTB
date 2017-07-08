@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webappbnd:WebAppBinding xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:webappbnd="webappbnd.xmi" xmi:id="WebAppBinding_1229327680121" virtualHostName="default_host">
+  <webapp href="WEB-INF/web.xml#WebApp_ID"/>
+  <resRefBindings xmi:id="ResourceRefBinding_1230130193011" jndiName="jdbc/CRM">
+    <bindingResourceRef href="WEB-INF/web.xml#ResourceRef_1230130193011"/>
+  </resRefBindings>
+  <ejbRefBindings xmi:id="EjbRefBinding_1229340679402" jndiName="ejb/com/timer/ejb/TimerEJBHome">
+    <bindingEjbRef href="WEB-INF/web.xml#EjbRef_1229340679402"/>
+  </ejbRefBindings>
+</webappbnd:WebAppBinding>

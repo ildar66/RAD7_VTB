@@ -1,0 +1,5 @@
+#Sun Nov 23 14:07:16 MSK 2008
+com.ibm.etools.ejbdeploy.generateRefStubs=true
+com.ibm.etools.ejbdeploy.generationFolder=ejbModule
+com.ibm.etools.ejbdeploy.rmicSysProperties=
+eclipse.preferences.version=1

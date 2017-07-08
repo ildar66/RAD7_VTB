@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="vtb">
+        <wb-resource deploy-path="/" source-path="/"/>
+        <dependent-module deploy-path="/" handle="module:/classpath/lib/C:/RAD7workspaces/RAD_NRI/nri/junit.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/classpath/lib/C:/RAD7workspaces/RAD_NRI/nri/jakarta-regexp-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/Vtb24Group/Vtb24Group">
+            <dependent-object>EjbModule_1226584783562</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/DictionaryApp/DictionaryApp">
+            <dependent-object>WebModule_1226590042765</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="VTB-AppLogic.jar" deploy-path="/" handle="module:/resource/VTB-AppLogic/VTB-AppLogic">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/OIDGenerator/OIDGenerator">
+            <dependent-object>EjbModule_1226919984687</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SequenceGeneratorClient.jar" deploy-path="/" handle="module:/resource/SequenceGeneratorClient/SequenceGeneratorClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/SequenceGenerator/SequenceGenerator">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="SequenceGeneratorClient.jar" deploy-path="/" handle="module:/resource/SequenceGeneratorClient/SequenceGeneratorClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

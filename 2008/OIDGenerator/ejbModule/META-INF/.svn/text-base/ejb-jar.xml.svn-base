@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar id="ejb-jar_ID" version="2.1" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/ejb-jar_2_1.xsd">
+	<display-name>
+	OIDGenerator</display-name>
+	<enterprise-beans>
+		<entity id="OIDvalue">
+			<ejb-name>OIDvalue</ejb-name>
+			<local-home>com.god.oidgen.OIDvalueLocalHome</local-home>
+			<local>com.god.oidgen.OIDvalueLocal</local>
+			<ejb-class>com.god.oidgen.OIDvalueBean</ejb-class>
+			<persistence-type>Container</persistence-type>
+			<prim-key-class>java.lang.String</prim-key-class>
+			<reentrant>false</reentrant>
+			<cmp-version>2.x</cmp-version>
+			<abstract-schema-name>OIDvalue</abstract-schema-name>
+			<cmp-field id="CMPAttribute_1226923211355">
+				<field-name>nextOID</field-name>
+			</cmp-field>
+			<cmp-field id="CMPAttribute_1226923211480">
+				<field-name>type</field-name>
+			</cmp-field>
+			<primkey-field>type</primkey-field>
+		</entity>
+		<session id="OIDGeneratorSession">
+			<ejb-name>OIDGeneratorSession</ejb-name>
+			<local-home>com.god.oidgen.OIDGeneratorSessionLocalHome</local-home>
+			<local>com.god.oidgen.OIDGeneratorSessionLocal</local>
+			<ejb-class>com.god.oidgen.OIDGeneratorSessionBean</ejb-class>
+			<session-type>Stateless</session-type>
+			<transaction-type>Container</transaction-type>
+			<ejb-local-ref id="EJBLocalRef_1226924913417">
+				<description>
+				</description>
+				<ejb-ref-name>ejb/oidValues</ejb-ref-name>
+				<ejb-ref-type>Entity</ejb-ref-type>
+				<local-home>com.god.oidgen.OIDvalueLocalHome</local-home>
+				<local>com.god.oidgen.OIDvalueLocal</local>
+				<ejb-link>OIDvalue</ejb-link>
+			</ejb-local-ref>
+		</session>
+	</enterprise-beans>
+	<assembly-descriptor>
+		<container-transaction>
+			<method>
+				<ejb-name>OIDvalue</ejb-name>
+				<method-name>*</method-name>
+			</method>
+			<trans-attribute>Mandatory</trans-attribute>
+		</container-transaction>
+		<container-transaction>
+			<method>
+				<ejb-name>OIDGeneratorSession</ejb-name>
+				<method-intf>Local</method-intf>
+				<method-name>getNextOID</method-name>
+				<method-params>
+					<method-param>java.lang.String</method-param>
+				</method-params>
+			</method>
+			<trans-attribute>RequiresNew</trans-attribute>
+		</container-transaction>
+	</assembly-descriptor>
+</ejb-jar>
